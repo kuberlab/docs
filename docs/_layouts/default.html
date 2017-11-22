@@ -15,8 +15,8 @@
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>     
     </section>
     <ul>
-    {% for item in site.data.content %}
-      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+    {% for item in site.pages %}
+      <li><a href="{{ item.title }}" alt="{{ item.title }}">{{ item.title }}</a></li>
     {% endfor %}
     </ul>
     <section class="main-content">
