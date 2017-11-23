@@ -1,4 +1,4 @@
-A Project is a environment for development and lifecycle management ML/AI application. You can find a lot of template and even prebuilt Projects in the Kuberlab [catalog](/Catalog/Work With Catalog.md#Install project from catalog). You could crate new project using [UI interface](Create New Project.md#Creating empty project from UI interface) or [using command line tool](Create New Project.md#Creating empty project using Kuberlab command lien tool).
+A Project is a environment for development and lifecycle management ML/AI application. You can find a lot of template and even prebuilt Projects in the Kuberlab [catalog](/Catalog/Work With Catalog.md#Install project from catalog). You could create new project using [UI interface](Create New Project.md#Creating empty project from UI interface) or [using command line tool](Create New Project.md#Creating empty project using Kuberlab command lien tool).
 
 ### Creating empty project from UI interface.
 1. Open your workspace and select projects tab.
