@@ -1,5 +1,3 @@
-## Create new project
-dsds
 ## Edit project description
 dsdsd
 ## Work with sources
