@@ -10,4 +10,4 @@ Click Add, then specify storage name, size in GB and connected cluster (and opti
 
 To delete kuberlab storage, just simply click **delete** in storage options:
 
-![](/img/kube-storage/create.png)
+![](/img/kube-storage/delete.png)
