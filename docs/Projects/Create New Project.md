@@ -15,5 +15,5 @@ A Project is a environment for development and lifecicle management ML/AI applic
 ![](/img/project/wizard-5.png)
 7. Yore are almost done. Now you have completly configured environment to work with your ML/AI application. Please see [Work With Project](Work With Project.md) for additional documentations.
 ![](/img/project/wizard-6.png)
-### Creating empty project using Kuberlab command lien tool.
+### Creating empty project using Kuberlab command line tool.
 Comming soon.
