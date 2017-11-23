@@ -1,8 +1,19 @@
 ## Create new Infrustructure
 bla bla
 ## App Resource
-bla bla bla
+
+App resource bla bla...
+
+![](/img/infra/app_resource.png)
+
 ## Resources
-bla bla
+
+Resources bla bla...
+
+![](/img/infra/resources.png)
+
 ## Applications
-mkmkm
+
+Applications bla bla...
+
+![](/img/infra/applications.png)
