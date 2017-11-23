@@ -1,4 +1,1 @@
----
-layout: default
----
-# Test
+# Welcome to Kuberlab documentation
