@@ -17,4 +17,5 @@ NOTE: You don't need restart mkdocs on every change. It will automatically reloa
 
 ## Public documentation
 
-If it looks good, jsut commit and push repository. It will take aboute 1 minute to automatically update http://kuberlab.readthedocs.io/en/latest/#welcome-to-kuberlab-documentation
+If it looks good, jsut commit and push repository. It will take aboute 1 minute to automatically update
+ http://kuberlab.readthedocs.io/
