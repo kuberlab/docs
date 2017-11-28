@@ -32,7 +32,7 @@ You must have a Kuberlab account to use the platform. Once your account is creat
 
 2. Sign up with your email address and other required information ![](img/signup2.png)
 
-3. A confirmation email will be sent to you within 24 hours. Follow the instructions in this email to complete your registration. If you do not receive the e-mail message from the address "noreply@kuberlab.io" within 24 hours of initial registration, please check the Spam folder. If you have not received the confirmation e-mail, please contact [mailto:support@kuberlab.com](mailto:support@kuberlab.com)
+3. A confirmation email will be sent to you within 24 hours. Follow the instructions in this email to complete your registration. If you do not receive the e-mail message from the address "noreply@kuberlab.io" within 24 hours of initial registration, please check the Spam folder. If you have not received the confirmation e-mail, please contact [support@kuberlab.com](mailto:support@kuberlab.com)
 
 
 ### Source Account Registration
