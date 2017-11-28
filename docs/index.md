@@ -2,19 +2,21 @@
 
 ## Kuberlab Basics
 
-This tutorial provides a step-by-step guide to initial setup of the Kuberlab Application Management Platform, which will help you automate the following:
+This tutorial provides a step-by-step guide to the initial setup of the Kuberlab Application Management Platform, which will help you automate the following:
 
 * Infrastructure Management
 
-* Application Management
+* AI Application Management
 
-* Integrating Public Applications
+* Integrating Public Applications in your project
 
 * Deploying Your Applications
 
+The steps are listed in the order they are to be performed.
+
 ## Requirements
 
-1. Source code account on one of the following: Google, Github, Gitlab or Bitbucket
+1. Source code account on one of the following: Github, Gitlab or Bitbucket
 
 2. Cluster to run applications on, via one of the following: AWS, GCP or local Kubernetes server(s)
 
@@ -26,38 +28,55 @@ This tutorial provides a step-by-step guide to initial setup of the Kuberlab App
 
 You must have a Kuberlab account to use the platform. Once your account is created, you will be able to log into our system and connect your source code and cloud service accounts, so Kuberlab can perform all cloud automation on your behalf.
 
-1. Go to the web page: [https://go.kuberlab.io](https://dev.kuberlab.io)
+1. Go to the web page: [https://go.kuberlab.io](https://go.kuberlab.io)
 
-2. Sign up with your Email ![](img/signup2.png)
+2. Sign up with your email address and other required information ![](img/signup2.png)
 
-3. Wait for confirmation email and follow the instructions to confirm your registration. If you will not see the e-mail message from address "noreply@kuberlab.io", please check the Spam folder. If you did not receive confirmation e-mail, please contact support@kuberlab.com
+3. A confirmation email will be sent to you within 24 hours. Follow the instructions in this email to complete your registration. If you do not receive the e-mail message from the address "noreply@kuberlab.io" within 24 hours of initial registration, please check the Spam folder. If you have not received the confirmation e-mail, please contact [mailto://support@kuberlab.com](mailto://support@kuberlab.com)
 
-4. After logging in, go to ‘Settings’ page (click your user name in the upper right, and then ‘Settings’). You can go to the page directly using this link: [https://go.kuberlab.io/settings/my](https://go.kuberlab.io/settings/my). ![](img/image_1.png)
-
-5. Under ‘Services’, add and configure the source account that contains your application or model source code. ![](img/image_2.png)
 
 ### Source Account Registration
 
 If you do not have a source account to store and host your model or application source code, you can create one with any of the following services at their respective sites:  
-Google: [https://cloud.google.com/](https://cloud.google.com/)  
+
 Github: [https://github.com/](https://github.com/)  
 Gitlab: [https://gitlab.com/](https://about.gitlab.com/)  
 Bitbucket: [https://bitbucket.org/](https://bitbucket.org/product)  
 
-6. Under ‘Service Accounts’, add and configure the cloud service account where you will run your cluster. Currently Kuberlab supports Google Cloud, AWS, and local Kubernetes clusters.
-![](img/image_3.png)
+If you already have a source account, you can connect it to the Kuberlab service:
 
-### Cloud Account Registration
+1. After logging in, go to ‘Settings’ page (click your user name in the upper right, and then ‘Settings’). You can go to the page directly using this link: [https://go.kuberlab.io/settings/my](https://go.kuberlab.io/settings/my). ![](img/image_1.png)
 
-If you do not have a cloud service account to run your cluster, you can create one with the following services at their respective sites:  
+2. Under ‘Services’, add and configure the source account that contains your application or model source code. ![](img/image_2.png)
+
+
+### [Optional] Cloud Account Registration
+
+Kuberlab provides you a shared cluster to run your applications during your trial period. You can also configure a local Kubernetes cluster. Hence a cloud service account registration is optional. If you do not wish to use the shared cluster, or if your trial period is over, you will need to either configure a local cluster, or use a cloud service, and connect this to the Kuberlab service.
+
+If you need a cloud service account to run your cluster, you can create one with the following services at their respective sites:  
 Google: [https://cloud.google.com/](https://cloud.google.com/)  
 AWS: [https://aws.amazon.com/](https://aws.amazon.com/)  
 
-## Infrastructure Creation
+To configure your cluster in the Kuberlab service:
+1. Go the the 'Settings' page as before (see Source Account Registration).
 
-Before you can do anything with an application, you need to create an Infrastructure for your project. You initialize your Infrastructure by selecting the source repository that your project will use.
+2. Under ‘Service Accounts’, add and configure the cloud service account where you will run your cluster. Currently Kuberlab supports Google Cloud, AWS, and local Kubernetes clusters.
+![](img/image_3.png)
 
-1. From the main tab (click ‘Kuberlab’ at the top left), click the button on the right labeled 'Create new infrastructure'.
+## [Optional] Infrastructure Creation
+
+If you are trying out the Kuberlab service with the provided example templates and the shared cluster (free trial period only), you do not need to follow this step. If you wish to connect your own source code and/or your own cluster to the Kuberlab service, you need to create new infrastructure.
+
+To create new infrastructure, click on the 'Resources' tab in your workspace, and then click the button on the right labeled 'Create new infrastructure'. Fill in the fields. You can use the 'Expand' button to choose the repository type, and then be prompted by the system to help you choose the remaining fields by showing you the available selections.
+
+Click 'Save' to save your infrastructure details.
+
+## Project Creation
+
+Before you can do anything with an application, you need to create a project.
+
+1. From the main tab (click ‘Kuberlab’ at the top left), click the button on the right labeled 'Create new Project'.
 ![](img/image_4.png)
 
 2. Type the name of your project, provide the link to your repository and type the name of the branch, then click ‘save’. If you are not using a particular branch of that repository, indicate that you are using master by typing 'master'.
