@@ -11,8 +11,7 @@ We are supporting following data source type:
 
 * GIT - git repository. GitHub,BitBucket,GitLab,...
 * NFS - external network file system that support NFS protocol.
-* Cluster Storage - storage attached to your cluster by administrator. See [Cluster Storage](/Resources/Clusters.md).
-* Kuberlab Storages - persistent volume from your infrastructure. See [Kuberlab Storage](/Resources/Kuberlab Storage.md).
+* Cluster Storage - storage attached to your cluster by administrator or Kuberlab storage. See [Cluster Storage](/Resources/Clusters.md).
 * S3 Bucket - Storage that used your S3 bucket as data source.
 
 To add new storages or edit old open "SOURCES" tab in the Project.
