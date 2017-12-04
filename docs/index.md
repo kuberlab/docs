@@ -78,11 +78,11 @@ Click 'Save' to save your infrastructure details.
 
 Before you can do anything with an application, you need to create a project.
 
-1. From the main tab (click ‘Kuberlab’ at the top left), click the button on the right labeled 'Create new Project'.
+1. If you want to run one of the tutorials in the catalogue, you can create a tutorial project. In this case, click on the 'Catalog' button at the top. If you however want to build your own code, or use your own from your connected repository, click on your workspace from the main tab (click ‘Kuberlab’ at the top left) and then click the button on the right labeled 'Create new Project'.
 
 ![](img/quickstart/new_project.png)
 
-2. From the list of sample templates shown, choose the most relevant (click the 'Install' button)
+2. From the list of tutorials, or sample templates shown, choose the most relevant (click the 'Install' button). If you are choosing a tutorial, the 'tensorflow-tutorial-01' is a good place to start - click "Install to My", and then choose your workspace in the wizard that pops up.
 
 ![](img/quickstart/proj_sample_templates.png)
 
