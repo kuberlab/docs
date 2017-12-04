@@ -5,7 +5,7 @@ Creating an organization helps you centralize your organization's projects and r
 ## Teams
 See []
 # Service Accounts
-See [user billing](/Settings/User.md#serivce-accounts) for details.
+See [user service accounts](/Settings/User.md#service-accounts) for details.
 # Billing
 See [user billing](/Settings/User.md#billing) for details.
 
