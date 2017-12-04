@@ -7,7 +7,7 @@ A Project is the environment for development and lifecycle management of ML/AI a
 ![](/img/project/wizard-1.png)
 3. Choose one of the [cluster](/Resources/Cluster.md) available for your workspace. If there is no clusters available for you please subscribe to [Kuberlab service](/Settings/User.md#Billing) or contact your administrator to get access to compute resources.
 ![](/img/project/wizard-2.png)
-4. Set your project name.
+4. Set your project name. Valid name must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumerics between.
 ![](/img/project/wizard-3.png)
 5. Make basic configuration of your project and select a [kuberlab storage](/Resources/Kuberlab Storage.md) or a [cluster storage](/Resources/Clusters.md) available for your cluster.
 ![](/img/project/wizard-4.png)

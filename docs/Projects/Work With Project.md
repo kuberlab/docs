@@ -19,7 +19,7 @@ To add new storages or edit old open "SOURCES" tab in the Project.
 
 Fill all required fields:
 
-* Name - data source name
+* Name - data source name. Valid name must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumerics between. 
 * Sub Path - optional field. Path to mount the directory inside attached file system.
 * Mount Path - path inside Project.
 * Type - choose one of the data source type
@@ -46,19 +46,22 @@ External network file system that support NFS protocol. To connect NFS source ty
 
 ### Cluster Storage.
 Storage attached to shared cluster or cluster from your infrastructure. If there are no available cluster storage for you, contact to your administrator or support.
-To Connect Cluster storage you should specify only one of available for you cluster storage. See [Cluster Storage](/Resources/Clusters.md) for information about creating an management  this data source type.
+To Connect Cluster storage you should specify only one of available for you cluster storage. See [Cluster Storage](/Resources/Clusters.md) and [Kuberlab Storage](/Resources/Kuberlab Storage.md) for information about creating an management  this data source type.
 
 <mark>ATTENTION</mark>: following rules is applied for Sub Path variable:
 
-* If Sub Path begins from '/' symbol then data will be visible for all project in your organization and you can mount this data to other projects on the same organization. 
+* If Sub Path begins from '/' symbol then data will be visible for all project in your organization and you can share this data to other projects on the same organization. 
 * If path begins from '/shared/' then data  will be visible to everyone who have access to the same storage, even in another organization.
 * Otherwise data will be visible only inside your project.
 
 ![](/img/project/cluster-storage.png)
 
-### Kuberlab Storage.
-
 ### S3 Bucket.
+Storage that allows to work with S3 bucket data. To connect S3 source type you need specify following fields:
+
+* Server - address of your S3 server. Leave it empty for Amazon S3.
+* Bucket - bucket name.
+* Account - It is secret that hold user private credential that will be used for S3 connection. See [service account management](/Settings/User.md#Service Accounts)
 
 ![](/img/project/s3-storage.png)
 
