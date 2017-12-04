@@ -19,7 +19,9 @@ You must have a Kuberlab account to use the platform. Once your account is creat
 
 1. Go to the web page: [https://go.kuberlab.io](https://go.kuberlab.io)
 
-2. Sign up with your email address and other required information ![](img/quickstart/login.png)
+2. Sign up with your email address and other required information 
+
+![](img/quickstart/login.png)
 
 3. A confirmation email will be sent to you within 24 hours. Follow the instructions in this email to complete your registration. If you do not receive the e-mail message from the address "noreply@kuberlab.io" within 24 hours of initial registration, please check the Spam folder. If you have not received the confirmation e-mail, please contact [support@kuberlab.com](mailto:support@kuberlab.com)
 
@@ -34,9 +36,13 @@ Bitbucket: [https://bitbucket.org/](https://bitbucket.org/product)
 
 If you already have a source account, you can connect it to the Kuberlab service:
 
-1. After logging in, go to ‘Settings’ page (click your user name in the upper right, and then ‘Settings’). You can go to the page directly using this link: [https://go.kuberlab.io/settings/my](https://go.kuberlab.io/settings/my). ![](img/quickstart/settings.png)
+1. After logging in, go to ‘Settings’ page (click your user name in the upper right, and then ‘Settings’). You can go to the page directly using this link: [https://go.kuberlab.io/settings/my](https://go.kuberlab.io/settings/my).
 
-2. Under ‘Repositories’, add and configure the source account that contains your application or model source code. ![](img/quickstart/add_repo.png)
+![](img/quickstart/settings.png)
+
+2. Under ‘Repositories’, add and configure the source account that contains your application or model source code. 
+
+![](img/quickstart/add_repo.png)
 
 
 ### [Optional] Cloud Account Registration
@@ -51,6 +57,7 @@ To configure your cluster in the Kuberlab service:
 1. Go the the 'Settings' page as before (see Source Account Registration).
 
 2. Under ‘Service Accounts’, add and configure the cloud service account where you will run your cluster. Currently Kuberlab supports Google Cloud, AWS, and local Kubernetes clusters.
+
 ![](img/quickstart/add_service.png)
 
 ## [Optional] Infrastructure Creation
@@ -72,6 +79,7 @@ Click 'Save' to save your infrastructure details.
 Before you can do anything with an application, you need to create a project.
 
 1. From the main tab (click ‘Kuberlab’ at the top left), click the button on the right labeled 'Create new Project'.
+
 ![](img/quickstart/new_project.png)
 
 2. From the list of sample templates shown, choose the most relevant (click the 'Install' button)
@@ -90,7 +98,7 @@ Before you can do anything with an application, you need to create a project.
 
 ![](img/quickstart/version_select.png)
 
-6. The last step of template installation shows the configuration. There is not need to modify anything here. Click 'Install'.
+6. The last step of template installation shows the configuration. There is no need to modify anything here. Click 'Install'.
 
 ![](img/quickstart/config.png)
 
