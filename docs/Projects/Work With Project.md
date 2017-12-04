@@ -4,7 +4,7 @@ Use "SUMMARY" tab to add information and additional materials which will describ
 
 ![](/img/project/summary-2.png)
 
-# <a name="source"></a>Work with sources
+# <a name="source"></a>Working with sources
 Project requires configured data sources for training data, model source code, results and checkpoints
 You can configure all data sources in the "SOURCES" tab and mount it to different Tasks or to specific Project component like Jupyter or Tensorboard.
 We are supporting following data source types:
