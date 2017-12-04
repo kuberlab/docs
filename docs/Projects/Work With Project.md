@@ -1,10 +1,10 @@
-## Edit project summary.
+# Edit project summary.
 Use "SUMMARY" tab to add to add information and additional materials which will describe your Project. We are supporting [Markdown](https://en.wikipedia.org/wiki/Markdown) format for Project summary.
 ![](/img/project/summary-1.png)
 
 ![](/img/project/summary-2.png)
 
-## Work with sources.
+# <a name="source"></a>Work with sources.
 Project requires configured data sources for training data, model source code, and results and checkpoints
 You can configure all data sources in the "SOURCES" tab and mount it to different Tasks or to Project specific UI interface like Jupyter or Tensorboard.
 We are supporting following data source types:
@@ -26,16 +26,16 @@ Configuration:
 
 ![](/img/project/storage-2.png)
 
-### Git data source.
+# <a name="git-data-source"></a>Git data source.
 To connect git data source you need to specify following fields:
 
-* Repository - git repository path, like https://github.com/kuberlab-catalog/tensorflow. You can use dialog box to specify repository if you have connected git account in the [user setting](/Settings/User.md#Services).
+* Repository - git repository path, like https://github.com/kuberlab-catalog/tensorflow. You can use dialog box to specify repository if you have connected git account in the [user setting](/Settings/User.md#repositories).
 * Sub Path - by default content of git repository will be visible in the Project under "MountPath/RepoName". By specifying Sub Path you can change this behavior. For example if your repository has "src" folder and you want to mount its content to  "MountPath/" you should set "Sub Path" to "RepositoryName/src".
-* Account - Account must be set for private repository if you want to be able to commit changes. You need to provide secret that hold user private data, like access key or deploy key. See [service account management](/Settings/User.md#Service Accounts)
+* Account - Account must be set for private repository if you want to be able to commit changes. You need to provide secret that hold user private data, like access key or deploy key. See [service account management](/Settings/User.md#service-accounts)
 
 ![](/img/project/git-source-config.png)
 
-### NFS data source.
+# <a name="nfs-data-source"></a>NFS data source.
 External network file system that support NFS protocol. To connect NFS source type you need specify following fields:
 
 * Server - address of your NFS.
@@ -44,7 +44,7 @@ External network file system that support NFS protocol. To connect NFS source ty
 
 ![](/img/project/nfs-storage.png)
 
-### Cluster Storage.
+# <a name="cluster-data-source"></a>Cluster Storage.
 Storage attached to shared cluster or cluster from your infrastructure. If there are no available cluster storage for you, contact to your administrator or support.
 To Connect Cluster storage you should specify only one of available for you cluster storage. See [Cluster Storage](/Resources/Clusters.md) and [Kuberlab Storage](/Resources/Kuberlab Storage.md) for information about creating an management  this data source type.
 
@@ -56,19 +56,19 @@ To Connect Cluster storage you should specify only one of available for you clus
 
 ![](/img/project/cluster-storage.png)
 
-### S3 Bucket.
+# <a name="s3-data-source"></a>S3 Bucket.
 Storage that allows to work with S3 bucket data. To connect S3 source type you need specify following fields:
 
 * Server - address of your S3 server. Leave it empty for Amazon S3.
 * Bucket - bucket name.
-* Account - It is secret that hold user private credential that will be used for S3 connection. See [service account management](/Settings/User.md#Service Accounts)
+* Account - It is secret that hold user private credential that will be used for S3 connection. See [service account management](/Settings/User.md#service-accounts)
 
 ![](/img/project/s3-storage.png)
 
-## Task management
+# Task management
 dds
-## History
+# History
 dsdsds
-## Log
+# Log
 jkjk
-## Status
+# Status
