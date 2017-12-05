@@ -66,10 +66,44 @@ Storage that allows to work with S3 bucket data. To connect S3 source type you n
 ![](/img/project/s3-storage.png)
 
 # Task management
-Coming soon.
+Every project contains number of task that user can scheduler for execution. All base project templates and tutorial from Kuberlab catalog already have number preconfigured that. You can edit those tasks, remove it or create new one.
+
+![](/img/project/tasks1.png)
+
+![](/img/project/tasks2.png)
+
+Tasks have one or more resources. Resource is execution entity of the task. Multiple resources inside tasks generally required for distributed training. Also every resource can has any number of replicas.  Every resource replica will be executed inside container during task execution and they could communicate to each other through TCP or UDP protocol. Following environment variables is available inside execution containers:
+
+| Variable | Purpose | Example values |
+| ------------ | ------------- | ------------ |
+| GPU_COUNT | Number GPU available for replica  | 0,1, ...,n |
+| PYTHONPATH | Location of users python library  | $LIB_DIR:.... |
+| REPLICA_INDEX | Index of current replica. Useful for distributed training | 1,2,... |
+| upper_case({ResourceName})_NODES | comma separated list of dns addresses resource replicas | T1-R1-0-0.R1-0,T1-R1-0-1.R1-0,... (where T1 task name,R1 resource name) |
+| BUILD_ID | Id of current task run | 1,2...,n |
+| upper_case({SourceName})_DIR | Mount point for Source with name 'SourceName' | /workspace/src |
+
+Following parameter used for specify task execution:
+
+| Field | Purpose | Example values |
+| ------------ | ------------- | ------------ |
+| Execution directory | Directory to start user command | For example $SRC_DIR |
+| Timeout | Time to wait compute resource | 300 |
+| Execution command | Command to start compute process | python styles.py --job_name=worker --train_dir=$TRAINING_DIR/$BUILD_ID  --task_index=$REPLICA_INDEX --ps_hosts=$PS_NODES --worker_hosts=$WORKER_NODES |
+| Resources | Specify minimum and maximum compute resources requirements | Requires at least CPU=100m, Memory=62Mi, but no more than CPU=4000m, Memory=8Gi and GPU=1 for each resource replica | 
+| Environment variables | User defined environment variables | MY_VARIABLE = value |
+| Images | Define container images that will be used for cpu and gpu | (tensorflow/tensorflow:1.2.0,tensorflow/tensorflow:1.2.0-gpu) |
+| Default volume mapping | Useful to mount all sources to container as they are defined in the sources | true or false |
+| Default mount path | add some prefixed prefix to mount points for all sources |
+| Volumes | specify custom sources mounting to container | (data,subfolder,/mynewfoler/andsubfoler) |
+| Node Allocator | For public clouds only. Template to allocate new compute resource on the public cloud if there isn't resource available | template name from your cluster configuration |
+
+
 # History
 Coming soon.
 # Log
 Coming soon.
 # Status
+Coming soon.
+# Integrate Project to your workflow engine
 Coming soon.
