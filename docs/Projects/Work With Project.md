@@ -1,5 +1,7 @@
-# Edit project summary
-Use "SUMMARY" tab to add information and additional materials which will describe your Project. We are supporting [Markdown](https://en.wikipedia.org/wiki/Markdown) format for Project summary.
+# Project Summary
+
+The project summary ('SUMMARY' tab) contains descriptive information and additional materials for your project. You can enter any information here that you want to go with your project. Use the edit (pen) symbol at bottom right to start editing content. The supported format for this content is [Markdown](https://en.wikipedia.org/wiki/Markdown)
+
 ![](/img/project/summary-1.png)
 
 ![](/img/project/summary-2.png)
