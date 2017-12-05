@@ -1,19 +1,19 @@
-## Create new Infrustructure
-bla bla
+# Create new Infrastructure
+Coming soon
 ## App Resource
 
-App resource bla bla...
+Coming soon
 
 ![](/img/infra/app_resource.png)
 
 ## Resources
 
-Resources bla bla...
+Coming soon
 
 ![](/img/infra/resources.png)
 
 ## Applications
 
-Applications bla bla...
+Coming soon
 
 ![](/img/infra/applications.png)

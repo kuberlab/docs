@@ -17,8 +17,8 @@ Used for manage private information such as secrets,keys or password for externa
 You could add following Service accounts:
 
 * Google - OAuth credentials. Required for creating and provisioning your own [clusters](/Resources/Cluster.md) on the Google cloud.
-* Amazon - AWS Access ID and secret key. Required for creating and provisioning your own [clusters](/Resources/Cluster.md) on the AWS or to connecting [AWS S3 Bucket as data source](/Projects/Work With Project.md#s3-data-source) to your project.
-* GIT - Private deploy key or user name and access token. Required for connecting private git repositories as data source to your project. See [Git data source](/Projects/Work With Project.md#git-data-source) for details.
+* Amazon - AWS access ID and secret key. Required for creating and provisioning your own [clusters](/Resources/Cluster.md) on the AWS or to connecting [AWS S3 Bucket as data source](/Projects/Work With Project.md#s3-data-source) to your project.
+* GIT - Private deploy key or user name and access token. Required for connecting private git repositories as data source to your project. See [Git data source](/Projects/Work With Project.md#git-data-source) for details and [using deploy keys](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys) or using [access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) 
 
 
 # <a name="billing"></a>Billing

@@ -1,5 +1,4 @@
-dsdsdsd
-## Install project from catalog
-jksjk
-## Install application from catalog
-dsds
+# Install project from catalog
+Coming soon
+# Install application from catalog
+Coming soon
