@@ -6,6 +6,42 @@ The project summary ('SUMMARY' tab) contains descriptive information and additio
 
 ![](/img/project/summary-2.png)
 
+# Task management
+
+The typical way to execute your AI application is to run it with tasks ('TASKS' tab). Thus, every project contains a number of tasks that the user can schedule as required. All base project templates and tutorials from the Kuberlab catalog already have some preconfigured tasks. You can modify those tasks, or remove or create new ones.
+
+![](/img/project/tasks1.png)
+
+![](/img/project/tasks2.png)
+
+Every task consists of one or more execution entities (like processes or threads) that are called 'resources'. Distributed processing typically requires multiple replicas of resources running in parallel. A resource may have any number of replicas. Each replica is executed inside the container during task execution, and the replicas can communicate with each other through the TCP or UDP protocols.  In the figures above, the tasks and resources are shown in the vertical pane on the left. The upper-level names are the tasks (prepare-data, standalone, parallel, export, workflow, etc.) and the indented names are the resources within each task (upload, worker, ps, etc.) Each resource has a form on the right of the task pane, to control the execution. The following variables are available to control resource execution and replication in an execution container:
+
+
+| Variable | Purpose | Example values |
+| ------------ | ------------- | ------------ |
+| GPU_COUNT | Number of GPU instances available for each replica | 0,1, ...,n |
+| PYTHONPATH | Location of the python library  | $LIB_DIR:.... |
+| REPLICA_INDEX | Index of the current resource replica. Required for distributed training | 1,2,... |
+| upper_case({ResourceName})_NODES | comma separated list of dns addresses resource replicas | T1-R1-0-0.R1-0,T1-R1-0-1.R1-0,... (where T1 task name,R1 resource name) |
+| BUILD_ID | Id of current task run | 1,2...,n |
+| upper_case({SourceName})_DIR | Mount point for Source with name 'SourceName' | /workspace/src |
+
+The following is a list of parameters used to specify task execution:
+
+| Field | Purpose | Example values |
+| ------------ | ------------- | ------------ |
+| Execution directory | Directory to run user commands in | $SRC_DIR |
+| Timeout | Time to wait for a compute resource | 300 |
+| Execution command | Command to start the compute process | python styles.py --job_name=worker --train_dir=$TRAINING_DIR/$BUILD_ID  --task_index=$REPLICA_INDEX --ps_hosts=$PS_NODES --worker_hosts=$WORKER_NODES |
+| Resources | Minimum and maximum compute resource requirements | Requires at least CPU=100m, Memory=62Mi, but no more than CPU=4000m, Memory=8Gi and GPU=1 for each resource replica | 
+| Environment variables | User defined environment variables | MY_VARIABLE = value |
+| Images | Container images that will be used for cpu and gpu | (tensorflow/tensorflow:1.2.0,tensorflow/tensorflow:1.2.0-gpu) |
+| Default volume mapping | Useful to mount all sources to container as they are defined in the sources | true or false |
+| Default mount path | Fixed prefix to the mount points for all sources |
+| Volumes | Custom sources to be mounted to the container | (data, subfolder, /mynewfolder/andsubfolder) |
+| Node Allocator | For public clouds only. Template to allocate new compute resources on the public cloud if there aren't resources available | Template name from your cluster configuration |
+
+
 # <a name="source"></a>Working with sources
 Project requires configured data sources for training data, model source code, results and checkpoints
 You can configure all data sources in the "SOURCES" tab and mount it to different Tasks or to specific Project component like Jupyter or Tensorboard.
@@ -67,38 +103,6 @@ Storage that allows to work with S3 bucket data. To connect S3 source type you n
 
 ![](/img/project/s3-storage.png)
 
-# Task management
-Every project contains number of task that user can scheduler for execution. All base project templates and tutorial from Kuberlab catalog already have number preconfigured that. You can edit those tasks, remove it or create new one.
-
-![](/img/project/tasks1.png)
-
-![](/img/project/tasks2.png)
-
-Tasks have one or more resources. Resource is execution entity of the task. Multiple resources inside tasks generally required for distributed training. Also every resource can has any number of replicas.  Every resource replica will be executed inside container during task execution and they could communicate to each other through TCP or UDP protocol. Following environment variables is available inside execution containers:
-
-| Variable | Purpose | Example values |
-| ------------ | ------------- | ------------ |
-| GPU_COUNT | Number GPU available for replica  | 0,1, ...,n |
-| PYTHONPATH | Location of users python library  | $LIB_DIR:.... |
-| REPLICA_INDEX | Index of current replica. Useful for distributed training | 1,2,... |
-| upper_case({ResourceName})_NODES | comma separated list of dns addresses resource replicas | T1-R1-0-0.R1-0,T1-R1-0-1.R1-0,... (where T1 task name,R1 resource name) |
-| BUILD_ID | Id of current task run | 1,2...,n |
-| upper_case({SourceName})_DIR | Mount point for Source with name 'SourceName' | /workspace/src |
-
-Following parameter used for specify task execution:
-
-| Field | Purpose | Example values |
-| ------------ | ------------- | ------------ |
-| Execution directory | Directory to start user command | For example $SRC_DIR |
-| Timeout | Time to wait compute resource | 300 |
-| Execution command | Command to start compute process | python styles.py --job_name=worker --train_dir=$TRAINING_DIR/$BUILD_ID  --task_index=$REPLICA_INDEX --ps_hosts=$PS_NODES --worker_hosts=$WORKER_NODES |
-| Resources | Specify minimum and maximum compute resources requirements | Requires at least CPU=100m, Memory=62Mi, but no more than CPU=4000m, Memory=8Gi and GPU=1 for each resource replica | 
-| Environment variables | User defined environment variables | MY_VARIABLE = value |
-| Images | Define container images that will be used for cpu and gpu | (tensorflow/tensorflow:1.2.0,tensorflow/tensorflow:1.2.0-gpu) |
-| Default volume mapping | Useful to mount all sources to container as they are defined in the sources | true or false |
-| Default mount path | add some prefixed prefix to mount points for all sources |
-| Volumes | specify custom sources mounting to container | (data,subfolder,/mynewfoler/andsubfoler) |
-| Node Allocator | For public clouds only. Template to allocate new compute resource on the public cloud if there isn't resource available | template name from your cluster configuration |
 
 
 # History
