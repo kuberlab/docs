@@ -62,7 +62,7 @@ Configuration:
 
 ![](/img/project/storage-2.png)
 
-## Git data source
+## <a name="source"></a>Git data source
 To connect a git data source you need to specify the following fields:
 
 * Repository: Git repository path, like https://github.com/kuberlab-catalog/tensorflow. You can use the "Expand" button to specify repository details if you have connected a git account in the [user settings](/Settings/User.md#repositories).
@@ -73,7 +73,7 @@ Note that the "Account" field is required only if you have a private Github repo
 
 ![](/img/project/git-source-config.png)
 
-## NFS data source
+## <a name="nfs-data-source"></a>NFS data source
 This is an external network file system that support the NFS protocol. To connect a NFS source type you need to specify the following fields:
 
 * Server: The IP address of your NFS server.
@@ -83,7 +83,7 @@ This is an external network file system that support the NFS protocol. To connec
 
 ![](/img/project/nfs-storage.png)
 
-## Cluster Storage
+## <a name="cluster-storage"></a>Cluster Storage
 This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
 To connect cluster storage you must specify one of the available cluster storages. See [Cluster Storage](/Resources/Clusters.md) and [Kuberlab Storage](/Resources/Kuberlab Storage.md) for information about creating and managing this data source type.
 
@@ -95,7 +95,7 @@ To connect cluster storage you must specify one of the available cluster storage
 
 ![](/img/project/cluster-storage.png)
 
-## S3 Bucket Storage
+## <a name="s3-bucket-storage"></a>S3 Bucket Storage
 This is storage that allows working with S3 bucket data. To connect a S3 source type you need to specify the following fields:
 
 * Server: The address of your S3 server. Leave it empty for Amazon S3.
