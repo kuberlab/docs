@@ -42,49 +42,50 @@ The following is a list of parameters used to specify task execution:
 | Node Allocator | For public clouds only. Template to allocate new compute resources on the public cloud if there aren't resources available | Template name from your cluster configuration |
 
 
-# <a name="source"></a>Working with sources
-Project requires configured data sources for training data, model source code, results and checkpoints
-You can configure all data sources in the "SOURCES" tab and mount it to different Tasks or to specific Project component like Jupyter or Tensorboard.
-We are supporting following data source types:
+# Working with sources
+A project requires data sources to be configured for training data, model source code, results and checkpoints. You can configure all data sources in the "SOURCES" tab and mount it to different Tasks or to specific Project components like Jupyter or Tensorboard. We support the following data source types:
 
-* GIT - git repository. You can connect you GitHub, GitLab or BitBucket account or use any other git server
-* NFS - external network file system that support NFS protocol.
-* Cluster Storage - storage attached to your cluster by administrator or provided by Kuberlab service. See [Cluster Storage](/Resources/Clusters.md).
-* S3 Bucket - Storage that used your S3 bucket as data source.
+* GIT: Git repository. You can connect you GitHub, GitLab or BitBucket account or use any other git server with your KuberLab account.
+* NFS: External network file system that supports the NFS protocol.
+* Cluster Storage: Storage attached to your cluster by your administrator (in case of a local cluster), or provided by the Kuberlab service. See [Cluster Storage](/Resources/Clusters.md) for details.
+* S3 Bucket: Storage that uses your S3 bucket as a data source.
 
-To add new storages or edit old open "SOURCES" tab in the Project.
+When you create a project using either the recommended templates, or a tutorial or sample from the KuberLab catalog, the required sources are automatically created for you. To add new storage or edit the existing entries, click on the "SOURCES" tab in the Project screen.
 ![](/img/project/storage-1.png)
 
 Configuration:
 
-* Name - data source name. Valid name must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumerics between. 
-* Sub Path - optional field. Path to mount the directory inside attached file system.
-* Mount Path - path inside Project. Required
-* Type - choose one of the data source type, Required
+* Name: Data source name. Valid names are 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumeric characters in between. 
+* Sub Path: Optional field. Path to mount the directory inside attached file system.
+* Mount Path: Path inside the Project. This is a required field.
+* Type: Choose one of the data source types. This is a required field.
 
 ![](/img/project/storage-2.png)
 
-# <a name="git-data-source"></a>Git data source
-To connect git data source you need to specify following fields:
+## Git data source
+To connect a git data source you need to specify the following fields:
 
-* Repository - git repository path, like https://github.com/kuberlab-catalog/tensorflow. You can use dialog box to specify repository f you have connected git account in the [user setting](/Settings/User.md#repositories).
+* Repository: Git repository path, like https://github.com/kuberlab-catalog/tensorflow. You can use the "Expand" button to specify repository details if you have connected a git account in the [user settings](/Settings/User.md#repositories).
 * Sub Path - by default content of git repository will be visible in the Project under "MountPath/RepoName". By specifying Sub Path you can change this behavior. For example if your repository has "src" folder and you want to mount its content to  "MountPath/" you should set "Sub Path" to "RepositoryName/src".
 * Account - Account must be set for private repository if you want to be able to commit changes. You need to provide secret that hold user private data, like access key or deploy key. See [service account management](/Settings/User.md#service-accounts)
 
+Note that the "Account" field is required only if you have a private Github repository. Unless you have such a repository configured in the user settings, this field will remain unavailable (set to "without account").
+
 ![](/img/project/git-source-config.png)
 
-# <a name="nfs-data-source"></a>NFS data source
-External network file system that support NFS protocol. To connect NFS source type you need specify following fields:
+## NFS data source
+This is an external network file system that support the NFS protocol. To connect a NFS source type you need to specify the following fields:
 
-* Server - address of your NFS.
-* Path - NFS internal path.
-* Sub Path - Path to data inside NFS volume. For example if your want to mount directory "/mypath/data" from NFS  to  directory "/MountPath/data", you should set mount path to "/MountPath/data" and Sub Path to "/mypath/data"
+* Server: The IP address of your NFS server.
+* Path: NFS internal path.
+* Mount Path: The file path at which you want the data available.
+* Sub Path: Path to data inside the NFS volume. For example if your want to mount the directory "/mypath/data" from the NFS server to  the directory "/MountPath/data", you should set the mount path to "/MountPath/data" and the sub path to "/mypath/data"
 
 ![](/img/project/nfs-storage.png)
 
-# <a name="cluster-data-source"></a>Cluster Storage
-Storage attached to shared cluster or cluster from your infrastructure. If you do not have cluster storage configured, contact  administrator or support.
-To Connect Cluster storage you should specify one of the available cluster storage. See [Cluster Storage](/Resources/Clusters.md) and [Kuberlab Storage](/Resources/Kuberlab Storage.md) for information about creating and management  this data source type.
+## Cluster Storage
+This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
+To connect cluster storage you must specify one of the available cluster storages. See [Cluster Storage](/Resources/Clusters.md) and [Kuberlab Storage](/Resources/Kuberlab Storage.md) for information about creating and managing this data source type.
 
 <mark>ATTENTION</mark>: following rules are applied to Sub Path variable:
 
@@ -94,12 +95,12 @@ To Connect Cluster storage you should specify one of the available cluster stora
 
 ![](/img/project/cluster-storage.png)
 
-# <a name="s3-data-source"></a>S3 Bucket
-Storage that allows to work with S3 bucket data. To connect S3 source type you need specify following fields:
+## S3 Bucket Storage
+This is storage that allows working with S3 bucket data. To connect a S3 source type you need to specify the following fields:
 
-* Server - address of your S3 server. Leave it empty for Amazon S3.
-* Bucket - bucket name.
-* Account - Secret that holds user private credentials that will be used for S3 connection. See [service account management](/Settings/User.md#service-accounts)
+* Server: The address of your S3 server. Leave it empty for Amazon S3.
+* Bucket: The bucket name.
+* Account: Secret that holds the user's private credentials that will be used for the S3 connection. See [service account management](/Settings/User.md#service-accounts)
 
 ![](/img/project/s3-storage.png)
 
