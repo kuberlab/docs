@@ -87,10 +87,10 @@ This is an external network file system that support the NFS protocol. To connec
 This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
 To connect cluster storage you must specify one of the available cluster storages. See [Cluster Storage](/Resources/Clusters.md) and [Kuberlab Storage](/Resources/Kuberlab Storage.md) for information about creating and managing this data source type.
 
-<mark>ATTENTION</mark>: following rules are applied to Sub Path variable:
+<mark>ATTENTION</mark>: The following rules are applied to the 'Sub Path' field:
 
-* If Sub Path begins from '/' symbol then data will be visible for all projects in your organization and you can share this data to other projects belonging to the same organization. 
-* If path begins from '/shared/' then data  will be visible to everyone who have access to the same storage volume, even from another organization.
+* If Sub Path begins with the '/' symbol then the data will be visible for all projects in your organization and you can share this data to other projects belonging to the same organization. 
+* If the Sub Path begins with '/shared/' then data  will be visible to everyone who has access to the same storage volume, even from another organization.
 * Otherwise data will be visible only inside your project.
 
 ![](/img/project/cluster-storage.png)
@@ -107,7 +107,8 @@ This is storage that allows working with S3 bucket data. To connect a S3 source 
 
 
 # History
-Coming soon.
+This tab shows a list of all resource instances run, with some details about them.
+
 # Log
 Coming soon.
 # Status
