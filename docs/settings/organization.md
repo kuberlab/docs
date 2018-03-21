@@ -1,24 +1,31 @@
 # Organizations
-Creating an organization helps you centralize your organization's projects and resources. All projects and resources live under the organization, and billing goes through a central organization account. You can create different teams under organization, setup access permissions for those teams and invite people to your teams.
-## Create new organization
-You could create new organization on the settings page.
+
+An organization is a construct used to centralize projects and resources that are inter-related and need to be managed under a single umbrella. These projects and resources then live under the organization, and billing goes through a single central organization account. You can create different teams under the organization hierarchy, set up access permissions for each team and invite specific users to each team.
+
+## Create a new organization
+
+Creating a new organization is done from the 'settings' page.
 
 ![](/img/settings/settting3.png)
 
-Please fill following fields:
+You will need to fill in the following fields:
 
-* Title - Visible name of organization.
-* Identification - Will be filled automatically or you can provide your own identification. With field will be used int the URL witch point to your Organization. Valid identification must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumerics between. 
-* Phone - Organization contact. Mandatory field.
-* URL - Organization contact. Mandatory field.
+* Title - The visible name of the organization.
+* Identification - This is filled automatically with a default. You can provide your own identification by changing the default. This field is used in the URL which points to your organization. A valid identification string must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]). Between these, it may have dashes (-) and lower case alphanumeric characters. 
+* Phone - Contact phone number for the organization. This is a mandatory field.
+* URL - Web page for the organization. This is a mandatory field.
 
 ## Teams
-After organization has been created you can create different teams under organization and setup access group for those teams. By default there is only one team 'Owners', users from this team have all permission to manage Infrastructures, Projects, Teams, Billing Information(if available) and Users for that organization.
+
+After an organization has been created, you can create different teams under the organization and set up access groups for those teams. By default there is only one team, named 'Owners'. The users in this team have full permissions that allow them to manage Infrastructures, Projects, Teams, Billing Information(if available) and Users for that organization.
 
 ![](/img/settings/settings4.png)
 
 # Service Accounts
+
 See [user service accounts](/Settings/User.md#service-accounts) for details.
+
 # Billing
+
 See [user billing](/Settings/User.md#billing) for details.
 
