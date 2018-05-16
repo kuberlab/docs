@@ -2,7 +2,7 @@
 
 ## Kuberlab Basics
 
-This tutorial provides a step-by-step guide to the initial setup of the Kuberlab Application Management Platform, which will help you run a sample application using a template from the KuberLab catalogue. This will also demonstrate the basic forms of:
+This tutorial provides a step-by-step guide to the initial setup of the Kuberlab Machine Learning Application Platform, which will help you run a sample application using a template from the KuberLab catalogue. This will also demonstrate the basic forms of:
 
 * Infrastructure Management
 
@@ -15,7 +15,7 @@ The steps are listed in the order they are to be performed.
 
 ## Kuberlab Registration
 
-You must have a Kuberlab account to use the platform. Once your account is created, you will be able to log into our system and connect your source code and cloud service accounts, so Kuberlab can perform all cloud automation on your behalf.
+You must have an account to use KuberLab. Once your account is created, you will be able to log into our system and connect your source code and cloud service accounts, so Kuberlab can perform all cloud automation on your behalf.
 
 1. Go to the web page: [https://go.kuberlab.io](https://go.kuberlab.io)
 
