@@ -47,7 +47,7 @@ If you already have a source account, you can connect it to the Kuberlab service
 
 ### [Optional] Cloud Account Registration
 
-Kuberlab provides you a shared cluster to run your applications during your trial period. You can also configure a local Kubernetes cluster. Hence a cloud service account registration is optional. If you do not wish to use the shared cluster, or if your trial period is over, you will need to either configure a local cluster, or use a cloud service, and connect this to the Kuberlab service.
+Kuberlab provides you a KuberLab shared cluster to run your applications. You can also configure to use your local Kubernetes cluster. Hence a cloud service account registration is optional. If you do not wish to use the shared cluster you will need to either configure a local cluster, or use a cloud service, and connect this to the Kuberlab service.
 
 If you need a cloud service account to run your cluster, you can create one with the following services at their respective sites:  
 Google: [https://cloud.google.com/](https://cloud.google.com/)  
@@ -98,6 +98,12 @@ Before you can do anything with an application, you need to create a project.
 
 ![](img/quickstart/version_select.png)
 
+Scroll down to access additional configurations
+
+![](img/quickstart/version_select2.png)
+
+![](img/quickstart/version_select3.png)
+
 6. The last step of template installation shows the configuration. There is no need to modify anything here. Click 'Install'.
 
 ![](img/quickstart/config.png)
@@ -106,7 +112,7 @@ This will install the template and take you to the project screen.
 
 ## Running your Project
 
-In the project screen, you will see several tabs. You can run template code from either the 'Jupyter' or the 'Tasks' tab. The former allows you to step through the code and read the notes, hence is the easier method. The latter is the tab that is used for the production flow, and allows you to define several tasks that can be run either serially or in parallel, and any number of combinations of both.
+In the project screen, you will see several tabs. You can run your code from the 'Tasks' tab. This tab is used for the production flow, and allows you to define several tasks that can be run either serially or in parallel, and any number of combinations of both.
 
 The 'Sources' tab allows you to navigate the directory structure and look at all the template files. If you wish to connect your own sources, you can do this here, by adding a new source path.
 
@@ -121,4 +127,10 @@ You can monitor your application from the 'Metrics' and 'Tensorboard' tabs.
 To add tools and frameworks packages from the open source community, use the 'Lib' tab.
 
 ![](img/quickstart/project.png)
+
+The 'Jupyter' allows you to step through the code and read the notes, hence is the easier method. 
+
+![](img/quickstart/project_jupyter.png)
+
+
 
