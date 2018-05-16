@@ -60,20 +60,6 @@ To configure your cluster in the Kuberlab service:
 
 ![](img/quickstart/add_service.png)
 
-## [Optional] Infrastructure Creation
-
-If you are trying out the Kuberlab service with the provided example templates and the shared cluster (free trial period only), you do not need to follow this step. If you wish to connect your own source code and/or your own cluster to the Kuberlab service, you need to create new infrastructure.
-
-To create new infrastructure, click on the 'Resources' tab in your workspace, and then click the button on the right labeled 'Create new infrastructure' (or the '+' icon at bottom right if some infrastructure already exists).
-
-![](img/quickstart/resources.png)
-
-Fill in the fields. You can use the 'Expand' button to choose the repository type, and then be prompted by the system to help you choose the remaining fields by showing you the available selections.
-
-![](img/quickstart/new_infra.png)
-
-Click 'Save' to save your infrastructure details.
-
 ## Project Creation
 
 Before you can do anything with an application, you need to create a project.
