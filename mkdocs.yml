@@ -1,5 +1,3 @@
-site_name: Kuberlab Documentation
-theme: readthedocs
 pages:
 - Home: 'index.md'
 - Settings:
@@ -24,4 +22,5 @@ pages:
 - About:
   - 'Copyright': 'about.md'
 
-
+site_name: Kuberlab Documentation
+theme: readthedocs
