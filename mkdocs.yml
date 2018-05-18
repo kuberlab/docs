@@ -1,4 +1,4 @@
-site_name: Kuberlab Help
+site_name: Kuberlab Documentation
 theme: readthedocs
 pages:
 - Home: 'index.md'
