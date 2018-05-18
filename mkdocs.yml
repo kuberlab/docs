@@ -1,15 +1,27 @@
 site_name: Kuberlab Documentation
 theme: readthedocs
-
 pages:
 - Home: 'index.md'
+- Settings:
+  - 'User': 'Settings/user.md'
+  - 'Organization': 'Settings/organization.md'
+- Projects: 
+  - 'Create New Project': 'Projects/Create New Project.md'
+  - 'Working With Projects.md': 'Projects/Working With Projects.md'
+- Catalog:
+  - 'Catalog': 'Catalog/Introduction.md'
+  - 'Work With Catalog': 'Catalog/Work With Catalog.md'
+  - 'Add New Project Template': 'Catalog/Add New Project Template.md'
+  - 'Add New Application': 'Catalog/Add New Application.md'
 - Datasets: 
   - 'Datasets': 'Datasets/datasets.md'
   - 'How to use': 'Datasets/usage.md'
   - 'Comands': "Datasets/commands.md"
-- Catalog:
-- Settings:
 - Resources:
-- Projects: 
+  - 'Infrastructure': 'Resources/infrastructure.md'
+  - 'Clusters': 'Resources/Clusters.md'
+  - 'Storage': 'Resources/Kuberlab Storage.md'
+- About:
+  - 'Copyright': 'about.md'
 
 
