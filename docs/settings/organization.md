@@ -6,7 +6,7 @@ An organization is a construct used to centralize projects and resources that ar
 
 Creating a new organization is done from the 'settings' page.
 
-![](/img/settings/settting3.png)
+![](../img/settings/settting3.png)
 
 You will need to fill in the following fields:
 
@@ -19,7 +19,7 @@ You will need to fill in the following fields:
 
 After an organization has been created, you can create different teams under the organization and set up access groups for those teams. By default, there is only one team named 'Owners'. The users in this team have full permissions that allow them to manage Infrastructures, Projects, Teams, Billing Information(if available) and Users for that organization.
 
-![](/img/settings/settings4.png)
+![](../img/settings/settings4.png)
 
 # Service Accounts
 

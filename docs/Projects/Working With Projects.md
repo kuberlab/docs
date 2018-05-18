@@ -2,17 +2,17 @@
 
 The project summary ('SUMMARY' tab) contains descriptive information and additional materials for your project. You can enter any information here that you want to go with your project. Use the edit (pen) symbol at bottom right to start editing content. The supported format for this content is [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
-![](/img/project/summary-1.png)
+![](../img/project/summary-1.png)
 
-![](/img/project/summary-2.png)
+![](../img/project/summary-2.png)
 
 # Task management
 
 The typical way to execute your AI application is to run it with tasks ('TASKS' tab). Thus, every project contains a number of tasks that the user can schedule as required. All base project templates and tutorials from the Kuberlab catalog already have some preconfigured tasks. You can modify those tasks, or remove or create new ones.
 
-![](/img/project/tasks1.png)
+![](../img/project/tasks1.png)
 
-![](/img/project/tasks2.png)
+![](../img/project/tasks2.png)
 
 Every task consists of one or more execution entities (like processes or threads) that are called 'resources'. Distributed processing typically requires multiple replicas of resources running in parallel. A resource may have any number of replicas. Each replica is executed inside the container during task execution, and the replicas can communicate with each other through the TCP or UDP protocols.  In the figures above, the tasks and resources are shown in the vertical pane on the left. The upper-level names are the tasks (prepare-data, standalone, parallel, export, workflow, etc.) and the indented names are the resources within each task (upload, worker, ps, etc.) Each resource has a form on the right of the task pane, to control the execution. The following variables are available to control resource execution and replication in an execution container:
 
@@ -51,7 +51,7 @@ A project requires data sources to be configured for training data, model source
 * S3 Bucket: Storage that uses your S3 bucket as a data source.
 
 When you create a project using either the recommended templates, or a tutorial or sample from the KuberLab catalog, the required sources are automatically created for you. To add new storage or edit the existing entries, click on the "SOURCES" tab in the Project screen.
-![](/img/project/storage-1.png)
+![](../img/project/storage-1.png)
 
 Configuration:
 
@@ -60,7 +60,7 @@ Configuration:
 * Mount Path: Path inside the Project. This is a required field.
 * Type: Choose one of the data source types. This is a required field.
 
-![](/img/project/storage-2.png)
+![](../img/project/storage-2.png)
 
 ## <a name="source"></a>Git data source
 To connect a git data source you need to specify the following fields:
@@ -71,7 +71,7 @@ To connect a git data source you need to specify the following fields:
 
 Note that the "Account" field is required only if you have a private Github repository. Unless you have such a repository configured in the user settings, this field will remain unavailable (set to "without account").
 
-![](/img/project/git-source-config.png)
+![](../img/project/git-source-config.png)
 
 ## <a name="nfs-data-source"></a>NFS data source
 This is an external network file system that support the NFS protocol. To connect a NFS source type you need to specify the following fields:
@@ -81,7 +81,7 @@ This is an external network file system that support the NFS protocol. To connec
 * Mount Path: The file path at which you want the data available.
 * Sub Path: Path to data inside the NFS volume. For example if your want to mount the directory "/mypath/data" from the NFS server to  the directory "/MountPath/data", you should set the mount path to "/MountPath/data" and the sub path to "/mypath/data"
 
-![](/img/project/nfs-storage.png)
+![](../img/project/nfs-storage.png)
 
 ## <a name="cluster-storage"></a>Cluster Storage
 This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
@@ -93,7 +93,7 @@ To connect cluster storage you must specify one of the available cluster storage
 * If the Sub Path begins with '/shared/' then data  will be visible to everyone who has access to the same storage volume, even from another organization.
 * Otherwise data will be visible only inside your project.
 
-![](/img/project/cluster-storage.png)
+![](../img/project/cluster-storage.png)
 
 ## <a name="s3-bucket-storage"></a>S3 Bucket Storage
 This is storage that allows working with S3 bucket data. To connect a S3 source type you need to specify the following fields:
@@ -102,7 +102,7 @@ This is storage that allows working with S3 bucket data. To connect a S3 source 
 * Bucket: The bucket name.
 * Account: Secret that holds the user's private credentials that will be used for the S3 connection. See [service account management](/Settings/User.md#service-accounts)
 
-![](/img/project/s3-storage.png)
+![](../img/project/s3-storage.png)
 
 
 

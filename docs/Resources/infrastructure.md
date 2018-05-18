@@ -4,16 +4,16 @@ Coming soon
 
 Coming soon
 
-![](/img/infra/app_resource.png)
+![](../img/infra/app_resource.png)
 
 ## Resources
 
 Coming soon
 
-![](/img/infra/resources.png)
+![](../img/infra/resources.png)
 
 ## Applications
 
 Coming soon
 
-![](/img/infra/applications.png)
+![](../img/infra/applications.png)
