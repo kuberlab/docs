@@ -1,5 +1,6 @@
 site_name: Kuberlab Help
-theme: readthedocspages:
+theme: readthedocs
+pages:
 - Home: 'index.md'
 - Settings:
   - 'User': 'Settings/user.md'
@@ -14,13 +15,15 @@ theme: readthedocspages:
   - 'Add New Application': 'Catalog/Add New Application.md'
 - Datasets: 
   - 'Datasets': 'Datasets/datasets.md'
-  - 'How to use': 'Datasets/usage.md'
+  - 'Usage': 'Datasets/usage.md'
   - 'Comands': "Datasets/commands.md"
 - Resources:
   - 'Infrastructure': 'Resources/infrastructure.md'
   - 'Clusters': 'Resources/Clusters.md'
   - 'Storage': 'Resources/Kuberlab Storage.md'
+- Tutorials:
+  - 'Project Paje Tour': 'Tutorials/project_page.md'
 - About:
-  - 'Copyright': 'about.md'
+  - 'Copyright': 'About/about.md'
 
 
