@@ -4,6 +4,12 @@ theme: readthedocs
 pages:
 - Home: 'index.md'
 - Datasets: 
-  - 'Datasets': 'Datasets/index.md'
+  - 'Datasets': 'Datasets/datasets.md'
   - 'How to use': 'Datasets/usage.md'
   - 'Comands': "Datasets/commands.md"
+- Catalog:
+- Settings:
+- Resources:
+- Projects: 
+
+
