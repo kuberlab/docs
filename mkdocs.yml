@@ -1,5 +1,7 @@
 site_name: Kuberlab Documentation
 theme: readthedocs
+copyright: KuberLab 2018
+google_analytics: ['UA-36723568-3', 'mkdocs.org']
 pages:
 - Home: 'index.md'
 - Settings:
@@ -22,7 +24,7 @@ pages:
   - 'Clusters': 'Resources/Clusters.md'
   - 'Storage': 'Resources/Kuberlab Storage.md'
 - Tutorials:
-  - 'Project Paje Tour': 'Tutorials/project_page.md'
+  - 'Project Page Tour': 'Tutorials/project_page.md'
 - About:
   - 'Copyright': 'About/about.md'
 
