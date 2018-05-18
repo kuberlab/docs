@@ -1,6 +1,5 @@
-site_name: Kuberlab Documentation
-theme: readthedocs
-pages:
+site_name: Kuberlab Help
+theme: readthedocspages:
 - Home: 'index.md'
 - Settings:
   - 'User': 'Settings/user.md'
