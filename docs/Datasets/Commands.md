@@ -1,10 +1,9 @@
 ##kdataset 
 Utility script for data set management.
 
-######Usage:
-  kdataset [command]
+Usage: kdataset [command]
 
-######Available Commands:
+Available Commands:
   dataset-delete:	Delete specific dataset.
   dataset-list:		List datasets for current workspace.
   help:			Help for any kdataset command.
@@ -13,7 +12,7 @@ Utility script for data set management.
   version-delete:	Delete a specific version of the data set.
   version-list:		List all versions for the current data set.
 
-#####Flags:
+Flags:
       --config string:	Path to the config file (default "~/.kuberlab/config").
       --debug:		Enable the debug level (shortcut for --log-level=debug).
       --help, -h:		help for kdataset.
@@ -22,34 +21,34 @@ Utility script for data set management.
       --version:		version for kdataset.
 
 ##kdataset commands
-dataset-delete
-######Usage:
-  kdataset dataset-delete <workspace> <dataset-name> [flags]
 
-#####Flags:
+#####dataset-delete
+
+Usage: kdataset dataset-delete <workspace> <dataset-name> [flags]
+
+Flags:
   -h, --help:	help for dataset-delete.
 
-###dataset-list
-#####Usage:
-  kdataset dataset-list <workspace> [flags]
+#####dataset-list
 
-#####Flags:
+Usage: kdataset dataset-list <workspace> [flags]
+
+Flags:
   -h, --help:	help for dataset-list.
 
-###pull
-Usage:
-  kdataset pull <workspace> <dataset-name>:<version> [-O output-file.tar] [flags]
+#####pull
 
-#####Flags:
+Usage: kdataset pull <workspace> <dataset-name>:<version> [-O output-file.tar] [flags]
+
+Flags:
   -h, --help:		help for pull.
   -O, --output string:	Output filename.
 
-###push
+#####push
 
-#####Usage:
-  kdataset push <workspace> <dataset-name>:<version> [flags]
+Usage: kdataset push <workspace> <dataset-name>:<version> [flags]
 
-#####Flags:
+Flags:
        --chunk-size int:	Chunk-size for scanning (default 512000).
   -c, --concurrency int:	Number of concurrent request to server (default 8).
        --create:		Create dataset in cloud-dealer if not exists.
@@ -58,26 +57,26 @@ Usage:
   -w, --websocket:	Use websocket for connecting to server. Decreases the number of 
 requests.
 
-###version-delete
-#####Usage:
-  kdataset version-delete <workspace> <dataset-name>:<version> [flags]
+#####version-delete
 
-#####Flags:
+Usage: kdataset version-delete <workspace> <dataset-name>:<version> [flags]
+
+Flags:
   -h, --help:	help for version-delete.
 
-###version-list
-#####Usage:
-  kdataset version-list <workspace> <dataset-name> [flags]
+#####version-list
 
-#####Flags:
+Usage: kdataset version-list <workspace> <dataset-name> [flags]
+
+Flags:
   -h, --help:	help for version-list.
 
-###Examples:
+##Examples:
 kdataset push test-projects cifar-10:1.0.0
 kdataset version-list test-projects cifar-10
 kdataset pull test-projects cifar-10:1.0.0
 
-###Installation:
+##Installation:
 Download the version for your OS from the kdataset release page
 https://github.com/kuberlab/pluk/releases 
 
@@ -89,7 +88,7 @@ Copy the kdataset utility to the folder pointed to by “PATH” environment” 
 To connect from the kdataset utility to the KuberLab application, you need a KuberLab
 config file at “~/.kuberlab/config”. If you do not have one, you need to create one.
 
-#####The configuration values that need to be created are:
+The configuration values that need to be created are:
 
 base_url: 	https://dev.kuberlab.io/api/v0.2 - url to access KuberLab API.
 username: 	info@kuberlab.com - your username.
