@@ -1,1 +1,1 @@
-####Copyright@KuberLab 2018
+####Copyright@2018 KuberLab Corp.

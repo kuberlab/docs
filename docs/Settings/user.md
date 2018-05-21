@@ -1,8 +1,11 @@
-# User settings
+# User Settings
 To change personal info or configure access to external repositories and service account go to settings page.
+
 ![](../img/settings/settings1.png)
+
 #  <a name="repositories"></a>Repositories
-You can add  OAuth based connection to your external git repositories or to your google account. This is required if you are planning to create your own clusters or want to use user friendly dialog to connect git repositories to [project sources](/Projects/Work With Project.md#git-data-source).
+You can add  OAuth based connection to your external git repositories or to your google account. This is required if you are planning to create your own clusters or want to be able to connect your git repositories to your projects as a storage volume.
+
 Following OAuth connections is supported:
 
 * [Github](https://github.com)
@@ -21,11 +24,9 @@ You could add following Service accounts:
 * GIT - Private deploy key or user name and access token. Required for connecting private git repositories as data source to your project. See [Git data source](/Projects/Work With Project.md#git-data-source) for details and [using deploy keys](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys) or using [access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) 
 
 
-# <a name="billing"></a>Billing
-<mark>ATTENTION:</mark> May be not available for your account.
-
 # User Token
 You can create a personal access token and use it in place of a password for Kuberlab API or for CLI tools.
 
-# Delete user
-<mark>ATTENTION:</mark>Be careful, all your data will be lost after this action!
+# Delete User
+
+Delete User will allow you to completely remove your user from Kuberlab service. This action will delete your account and all data associated with it. <mark>ATTENTION:</mark> Be careful, all your data will be lost after this action!

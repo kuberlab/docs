@@ -7,11 +7,12 @@ pages:
 - Settings:
   - 'User': 'Settings/user.md'
   - 'Organization': 'Settings/organization.md'
+  - 'Billing': 'Settings/billing.md'
 - Projects: 
   - 'Create New Project': 'Projects/Create New Project.md'
   - 'Working With Projects.md': 'Projects/Working With Projects.md'
 - Catalog:
-  - 'Catalog': 'Catalog/Introduction.md'
+  - 'Catalog': 'Catalog/Catalog.md'
   - 'Work With Catalog': 'Catalog/Work With Catalog.md'
   - 'Add New Project Template': 'Catalog/Add New Project Template.md'
   - 'Add New Application': 'Catalog/Add New Application.md'

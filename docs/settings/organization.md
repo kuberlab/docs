@@ -12,8 +12,8 @@ You will need to fill in the following fields:
 
 * Title - The visible name of the organization.
 * Identification - This is filled automatically with a default. You can provide your own identification by changing the default. This field is used in the URL which points to your organization. A valid identification string must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]). Between these, it may have dashes (-) and lower case alphanumeric characters. 
-* Phone - Contact phone number for the organization. This is a mandatory field.
-* URL - Web page for the organization. This is a mandatory field.
+* Phone - Contact phone number for the organization. 
+* URL - Web page for the organization. 
 
 ## Creating Teams
 
@@ -23,7 +23,7 @@ After an organization has been created, you can create different teams under the
 
 # Service Accounts
 
-See [user service accounts](/Settings/User.md#service-accounts) for details.
+See [user service accounts](/Settings/user.md#service-accounts) for details.
 
 # Billing
 
