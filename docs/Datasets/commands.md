@@ -77,12 +77,18 @@ Flags:
   -h, --help:	help for version-list.
 
 ##Examples:
+
 kdataset push test-projects cifar-10:1.0.0
+
+kdataset push test-projects cifar-10:1.0.0 --create
+
 kdataset version-list test-projects cifar-10
+
 kdataset pull test-projects cifar-10:1.0.0
 
 ##Installation:
 Download the version for your OS from the kdataset release page
+
 https://github.com/kuberlab/pluk/releases 
 
 Uncompress the downloaded tarball.
@@ -96,7 +102,9 @@ config file at “~/.kuberlab/config”. If you do not have one, you need to cre
 The configuration values that need to be created are:
 
 base_url: 	https://dev.kuberlab.io/api/v0.2 - url to access KuberLab API.
+
 username: 	info@kuberlab.com - your username.
+
 token: 		xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx - your token, which can be 
 obtained from the ‘settings’ page of the KuberLab application.
 
