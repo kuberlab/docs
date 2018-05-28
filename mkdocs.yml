@@ -1,6 +1,7 @@
 site_name: Kuberlab Documentation
 theme: readthedocs
 copyright: KuberLab 2018
+dev_addr: 0.0.0.0:8000
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 pages:
 - Home: 'index.md'

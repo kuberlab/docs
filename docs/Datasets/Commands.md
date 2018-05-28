@@ -49,11 +49,16 @@ Flags:
 Usage: kdataset push <workspace> <dataset-name>:<version> [flags]
 
 Flags:
-       --chunk-size int:	Chunk-size for scanning (default 512000).
+  --chunk-size int:	Chunk-size for scanning (default 512000).
+
   -c, --concurrency int:	Number of concurrent request to server (default 8).
-       --create:		Create dataset in cloud-dealer if not exists.
+
+  --create:		Create dataset in cloud-dealer if not exists.
+
   -f,  --force:		Force dataset uploading regardless warnings.
+
   -h, --help:		help for push.
+
   -w, --websocket:	Use websocket for connecting to server. Decreases the number of 
 requests.
 
