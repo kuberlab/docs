@@ -27,7 +27,7 @@ pages:
   - 'Storage': 'Resources/Kuberlab Storage.md'
 - Tutorials:
   - 'Project Page Tour': 'Tutorials/project_page.md'
-  - 'Face recognition using OpenVINO framework': 'Tutorials/openvino.md'
+  - 'Using OpenVINO': 'Tutorials/openvino.md'
 - About:
   - 'Copyright': 'About/about.md'
 
