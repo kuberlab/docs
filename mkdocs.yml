@@ -1,6 +1,6 @@
 site_name: kibernetika.ai 
 theme: readthedocs
-copyright: Kibernetika Inc 2018
+copyright: Copyright 2018 Kibernetika Inc.
 dev_addr: 0.0.0.0:8000
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 pages:
