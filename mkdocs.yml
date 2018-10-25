@@ -1,6 +1,6 @@
-site_name: Kuberlab Documentation
+site_name: kibernetica.ai documentation
 theme: readthedocs
-copyright: KuberLab 2018
+copyright: Kibernetica Inc 2018
 dev_addr: 0.0.0.0:8000
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 pages:
