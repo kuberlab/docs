@@ -3,7 +3,7 @@ theme: readthedocs
 copyright: Copyright 2018 Kibernetika Inc.
 dev_addr: 0.0.0.0:8000
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
-pages:
+nav:
 - Home: 'index.md'
 - Settings:
   - 'User': 'Settings/user.md'
@@ -11,7 +11,7 @@ pages:
   - 'Billing': 'Settings/billing.md'
 - Projects: 
   - 'Create New Project': 'Projects/Create New Project.md'
-  - 'Working With Projects.md': 'Projects/Working With Projects.md'
+  - 'Working With Projects': 'Projects/Working With Projects.md'
 - Catalog:
   - 'Catalog': 'Catalog/Catalog.md'
   - 'Work With Catalog': 'Catalog/Work With Catalog.md'
@@ -21,6 +21,8 @@ pages:
   - 'Datasets': 'Datasets/datasets.md'
   - 'Usage': 'Datasets/usage.md'
   - 'Comands': "Datasets/commands.md"
+- Servings:
+  - 'Start serving': 'Servings/serving_start.md'
 - Resources:
   - 'Infrastructure': 'Resources/infrastructure.md'
   - 'Clusters': 'Resources/Clusters.md'
@@ -30,5 +32,3 @@ pages:
   - 'Using OpenVINO': 'Tutorials/openvino.md'
 - About:
   - 'Copyright': 'About/about.md'
-
-

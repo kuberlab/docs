@@ -4,6 +4,7 @@ Utility script for data set management.
 Usage: kdataset \[command]
 
 Available Commands:
+
  * **dataset-delete**:	Delete specific dataset.
  * **dataset-list**:		List datasets for current workspace.
  * **help**:			Help for any kdataset command.
@@ -13,6 +14,7 @@ Available Commands:
  * **version-list**:		List all versions for the current data set.
 
 Flags:
+
  * **--config** string      Path to config file (default "~/.kuberlab/config")
  * **--debug**              Enable debug level (shortcut for --log-level=debug).
  * **-h**, **--help**       help for kdataset
@@ -37,7 +39,7 @@ Usage: ***kdataset dataset-list*** <i>workspace [flags]</i>
 Usage: ***kdataset pull*** <i>workspace dataset-name:version [-O output-file.tar]</i> [flags]
 
 Flags:
- * -h, --help:		help for pull.
+
  * -O, --output string:	Output filename.
 
 ##### push
@@ -45,12 +47,12 @@ Flags:
 Usage: ***kdataset push*** <i>workspace dataset-name:version [flags]</i>
 
 Flags:
+
  * --chunk-size int:      Chunk-size for scanning (default 512000).
  * -c, --concurrency int: Number of concurrent request to server (default 8).
  * --create:		      Create dataset in cloud-dealer if not exists.
  * --comment string:      Comment for the new version
  * -f,  --force:	      Force dataset uploading regardless warnings.
- * -h, --help:		      help for push.
  * --publish              Newly created dataset will be public. Only used in conjunction with --create.
  * -w, --websocket:	      Use websocket for connecting to server. Decreases the number of
 requests.
@@ -59,15 +61,9 @@ requests.
 
 Usage: ***kdataset version-delete*** <i>workspace dataset-name:version [flags]</i>
 
-Flags:
-  -h, --help:	help for version-delete.
-
 ##### version-list
 
 Usage: ***kdataset version-list*** <i>workspace dataset-name [flags]</i>
-
-Flags:
-  -h, --help:	help for version-list.
 
 ## Examples:
 
@@ -80,6 +76,7 @@ kdataset version-list test-projects cifar-10
 kdataset pull test-projects cifar-10:1.0.0
 
 ## Installation:
+
 Download the version for your OS from the **kdataset** release page
 
 https://github.com/kuberlab/pluk/releases 

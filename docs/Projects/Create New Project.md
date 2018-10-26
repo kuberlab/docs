@@ -11,7 +11,7 @@ Project is the environment for development and lifecycle management of ML/AI app
 ![](../img/project/wizard-4.png)
 6. One more time verify the final configuration of the Project and press install button.
 ![](../img/project/wizard-5.png)
-7. Yore are almost done. Now you have completely configured environment to work with your ML/AI application. Please see [Work With Project](Work With Project.md) for additional documentations.
+7. Yore are almost done. Now you have completely configured environment to work with your ML/AI application. Please see [Work With Project](Working With Projects.md) for additional documentations.
 ![](../img/project/wizard-6.png)
 ### Creating empty project using Kibernetika command line tool.
 Coming soon.
