@@ -2,6 +2,9 @@ site_name: Kibernetika Documentation
 theme: readthedocs
 copyright: Copyright 2018 Kibernetika Inc.
 dev_addr: 0.0.0.0:8000
+markdown_extensions:
+- toc:
+    permalink: "#"
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 nav:
 - Home: 'index.md'
@@ -23,6 +26,7 @@ nav:
   - 'Comands': "Datasets/commands.md"
 - Servings:
   - 'Start serving': 'Servings/serving_start.md'
+  - 'Serving tool': 'Servings/kuberlab_serving.md'
 - Resources:
   - 'Infrastructure': 'Resources/infrastructure.md'
   - 'Clusters': 'Resources/Clusters.md'
