@@ -1,16 +1,16 @@
 ##kdataset 
 Utility script for data set management.
 
-Usage: kdataset [command]
+Usage: ***kdataset*** [command]
 
 Available Commands:
-  dataset-delete:	Delete specific dataset.
-  dataset-list:		List datasets for current workspace.
-  help:			Help for any kdataset command.
-  pull:			Download the dataset archive.
-  push:			Push the data set within current directory.
-  version-delete:	Delete a specific version of the data set.
-  version-list:		List all versions for the current data set.
+  ***dataset-delete***:	Delete specific dataset.
+  ***dataset-list***:		List datasets for current workspace.
+  ***help***:			Help for any kdataset command.
+  ***pull***:			Download the dataset archive.
+  ***push***:			Push the data set within current directory.
+  ***version-delete***:	Delete a specific version of the data set.
+  ***version-list***:		List all versions for the current data set.
 
 Flags:
       --config string:	Path to the config file (default "~/.kuberlab/config").
@@ -24,21 +24,21 @@ Flags:
 
 #####dataset-delete
 
-Usage: kdataset dataset-delete <workspace> <dataset-name> [flags]
+Usage: ***kdataset dataset-delete*** <i>workspace dataset-name [flags]</i>
 
 Flags:
   -h, --help:	help for dataset-delete.
 
 #####dataset-list
 
-Usage: kdataset dataset-list <workspace> [flags]
+Usage: ***kdataset dataset-list*** <i>workspace [flags]</i>
 
 Flags:
   -h, --help:	help for dataset-list.
 
 #####pull
 
-Usage: kdataset pull <workspace> <dataset-name>:<version> [-O output-file.tar] [flags]
+Usage: ***kdataset pull*** <i>workspace dataset-name:version [-O output-file.tar]</i> [flags]
 
 Flags:
   -h, --help:		help for pull.
@@ -46,7 +46,7 @@ Flags:
 
 #####push
 
-Usage: kdataset push <workspace> <dataset-name>:<version> [flags]
+Usage: ***kdataset push*** <i>workspace dataset-name:version [flags]</i>
 
 Flags:
   --chunk-size int:	Chunk-size for scanning (default 512000).
@@ -64,14 +64,14 @@ requests.
 
 #####version-delete
 
-Usage: kdataset version-delete <workspace> <dataset-name>:<version> [flags]
+Usage: ***kdataset version-delete*** <i>workspace dataset-name:version [flags]</i>
 
 Flags:
   -h, --help:	help for version-delete.
 
 #####version-list
 
-Usage: kdataset version-list <workspace> <dataset-name> [flags]
+Usage: ***kdataset version-list*** <i>workspace dataset-name [flags]</i>
 
 Flags:
   -h, --help:	help for version-list.
@@ -87,32 +87,31 @@ kdataset version-list test-projects cifar-10
 kdataset pull test-projects cifar-10:1.0.0
 
 ##Installation:
-Download the version for your OS from the kdataset release page
+Download the version for your OS from the ***kdataset*** release page
 
 https://github.com/kuberlab/pluk/releases 
 
 Uncompress the downloaded tarball.
 
-Copy the kdataset utility to the folder pointed to by “PATH” environment” variable
-%% sudo cp kdataset /usr/local/bin
+Copy the ***kdataset*** utility to the folder pointed to by “PATH” environment” variable 
+% sudo cp kdataset /usr/local/bin
 
-To connect from the kdataset utility to the KuberLab application, you need a KuberLab
-config file at “~/.kuberlab/config”. If you do not have one, you need to create one.
+To connect from the ***kdataset*** utility to the **Kibernetika** application, you need a **Kibernetika** config file at “~/.kuberlab/config”. If you do not have one,you need to create one.
 
 The configuration values that need to be created are:
 
-base_url: 	https://dev.kuberlab.io/api/v0.2 - url to access KuberLab API.
+base_url: 	https://dev.kuberlab.io/api/v0.2 - url to access **Kibernetika** API.
 
-username: 	info@kuberlab.com - your username.
+username: 	info@kibernetika.ai - your username.
 
 token: 		xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx - your token, which can be 
-obtained from the ‘settings’ page of the KuberLab application.
+obtained from the ‘settings’ page of the **Kibernetika** application.
 
 To verify the installation, at first use
-kdataset --version, to verify that you are executing the right version of utility
+***kdataset --version***, to verify that you are executing the right version of utility
 
 Then execute
-kdataset dataset-list kuberlab-demo
+***kdataset dataset-list*** <i>kuberlab-demo</i>
 
 And you should see the list of all the demo data sets.
 

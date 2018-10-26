@@ -1,8 +1,8 @@
 # Quick Start Guide
 
-## Kuberlab Basics
+## Kibernetika Basics
 
-This tutorial provides a step-by-step guide to the initial setup of the Kuberlab Machine Learning Application Platform, which will help you run a sample application using a template from the KuberLab catalogue. This will also demonstrate the basic forms of:
+This tutorial provides a step-by-step guide to the initial setup of the  **Kibernetika Machine Teaching Platform**, which will help you run a sample application using a template from the catalogue. This will also demonstrate the basic forms of:
 
 * Infrastructure Management
 
@@ -13,17 +13,17 @@ This tutorial provides a step-by-step guide to the initial setup of the Kuberlab
 The steps are listed in the order they are to be performed.
 
 
-## Kuberlab Registration
+## Kibernetika Registration
 
-You must have an account to use KuberLab. Once your account is created, you will be able to log into our system and connect your source code and cloud service accounts, so Kuberlab can perform all cloud automation on your behalf.
+You must have an account to use **Kibernetika**. Once your account is created, you will be able to log into our system and connect your source code and cloud service accounts, so it can perform all cloud automation on your behalf.
 
-1. Go to the web page: [https://go.kuberlab.io](https://go.kuberlab.io)
+1. Go to the web page: [https://cloud.kuberlab.io](https://cloud.kuberlab.io)
 
 2. Sign up with your email address and other required information 
 
 ![](img/quickstart/login.png)
 
-3. A confirmation email will be sent to you within 24 hours. Follow the instructions in this email to complete your registration. If you do not receive the e-mail message from the address "noreply@kuberlab.io" within 24 hours of initial registration, please check the Spam folder. If you have not received the confirmation e-mail, please contact [support@kuberlab.com](mailto:support@kuberlab.com)
+3. A confirmation email will be sent to you within 24 hours. Follow the instructions in this email to complete your registration. If you do not receive the e-mail message from the address "noreply@kibernetika.ai" within 24 hours of initial registration, please check the Spam folder. If you have not received the confirmation e-mail, please contact [support@kibernetika.ai](mailto:support@kibernetika.ai)
 
 
 ### [Optional] Source Account Registration
@@ -34,9 +34,9 @@ Github: [https://github.com/](https://github.com/)
 Gitlab: [https://gitlab.com/](https://about.gitlab.com/)  
 Bitbucket: [https://bitbucket.org/](https://bitbucket.org/product)  
 
-If you already have a source account, you can connect it to the Kuberlab service:
+If you already have a source account, you can connect it to the Kibernetika service:
 
-1. After logging in, go to ‘Settings’ page (click your user name in the upper right, and then ‘Settings’). You can go to the page directly using this link: [https://go.kuberlab.io/settings/my](https://go.kuberlab.io/settings/my).
+1. After logging in, go to ‘Settings’ page (click your user name in the upper right, and then ‘Settings’). You can go to the page directly using this link: [https://cloud.kuberlab.io/settings/my](https://cloud.kuberlab.io/settings/my).
 
 ![](img/quickstart/settings.png)
 
@@ -47,16 +47,16 @@ If you already have a source account, you can connect it to the Kuberlab service
 
 ### [Optional] Cloud Account Registration
 
-Kuberlab provides you a KuberLab shared cluster to run your applications. You can also configure to use your local Kubernetes cluster. Hence a cloud service account registration is optional. If you do not wish to use the shared cluster you will need to either configure a local cluster, or use a cloud service, and connect this to the Kuberlab service.
+**Kibernetika** provides you a shared cluster to run your applications. You can also configure to use your local Kubernetes cluster. Hence a cloud service account registration is optional. If you do not wish to use the shared cluster you will need to either configure a local cluster, or use a cloud service, and connect this to kibernetika.ai service.
 
 If you need a cloud service account to run your cluster, you can create one with the following services at their respective sites:  
 Google: [https://cloud.google.com/](https://cloud.google.com/)  
 AWS: [https://aws.amazon.com/](https://aws.amazon.com/)  
 
-To configure your cluster in the Kuberlab service:
+To configure your cluster in the **Kibernetika** service:
 1. Go the the 'Settings' page as before (see Source Account Registration).
 
-2. Under ‘Service Accounts’, add and configure the cloud service account where you will run your cluster. Currently Kuberlab supports Google Cloud, AWS, and local Kubernetes clusters.
+2. Under ‘Service Accounts’, add and configure the cloud service account where you will run your cluster. Currently Kibernetika supports Google Cloud, AWS, and local Kubernetes clusters.
 
 ![](img/quickstart/add_service.png)
 
@@ -64,7 +64,7 @@ To configure your cluster in the Kuberlab service:
 
 Before you can do anything with an application, you need to create a project.
 
-1. If you want to run one of the tutorials in the catalogue, you can create a tutorial project. In this case, click on the 'Catalog' button at the top. If you however want to build your own code, or use your own from your connected repository, click on your workspace from the main tab (click ‘Kuberlab’ at the top left) and then click the button on the right labeled 'Create new Project'.
+1. If you want to run one of the tutorials in the catalogue, you can create a tutorial project. In this case, click on the 'Catalog' button at the top. If you however want to build your own code, or use your own from your connected repository, click on your workspace from the main tab (click ‘kibernetika.ai’ at the top left) and then click the button on the right labeled 'Create new Project'.
 
 ![](img/quickstart/new_project.png)
 

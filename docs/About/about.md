@@ -1,1 +1,1 @@
-####Copyright@2018 KuberLab Corp.
+####Copyright@2018 Kibernetika Inc.

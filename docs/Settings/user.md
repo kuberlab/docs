@@ -25,8 +25,8 @@ You could add following Service accounts:
 
 
 # User Token
-You can create a personal access token and use it in place of a password for Kuberlab API or for CLI tools.
+You can create a personal access token and use it in place of a password for **Kibernetika** API or for CLI tools.
 
 # Delete User
 
-Delete User will allow you to completely remove your user from Kuberlab service. This action will delete your account and all data associated with it. <mark>ATTENTION:</mark> Be careful, all your data will be lost after this action!
+Delete User will allow you to completely remove your user from **Kibernetika** service. This action will delete your account and all data associated with it. <mark>ATTENTION:</mark> Be careful, all your data will be lost after this action!

@@ -1,4 +1,4 @@
-This tutorial is a walk through an end-to-end AI project creating a face detection and recognition application in the kibernetika.ai platform. We will begin by selecting data sets creating a project and selecting models, setting up the infrastructure, training those models, and completing by re-training for future proofing. 
+This tutorial is a walk through an end-to-end AI project creating a face detection and recognition application in **Kibernetika**. We will begin by selecting data sets creating a project and selecting models, setting up the infrastructure, training those models, and completing by re-training for future proofing. 
 
 Before we begin, let’s first address that there are two main steps to this project - face detection and face recognition. First, to detect that A face actually exists in the image and, second, to then recognize a specific face. Face detection includes Pnet, Rnet, and ONet neural nets to define face boundary boxes on a picture.
 
@@ -130,5 +130,5 @@ Again, once re-training and validation completed, you can see the model accuracy
 
 And, as a collaborative platform, you can easily share results, models, data, etc. with team members for a seamless rollout.
 
-For more information on how you can accelerate your AI project with kibernetika.ai, reach us at info@kibernetika.ai today! 
+For more information on how you can accelerate your AI project with **Kibernetika**, reach us at info@kibernetika.ai today! 
 

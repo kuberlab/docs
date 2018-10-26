@@ -1,4 +1,4 @@
-site_name: kibernetika.ai 
+site_name: Kibernetika Documentation 
 theme: readthedocs
 copyright: Copyright 2018 Kibernetika Inc.
 dev_addr: 0.0.0.0:8000
@@ -24,7 +24,7 @@ pages:
 - Resources:
   - 'Infrastructure': 'Resources/infrastructure.md'
   - 'Clusters': 'Resources/Clusters.md'
-  - 'Storage': 'Resources/Kuberlab Storage.md'
+  - 'Storage': 'Resources/KibernetikaStorage.md'
 - Tutorials:
   - 'Project Page Tour': 'Tutorials/project_page.md'
   - 'Using OpenVINO': 'Tutorials/openvino.md'
