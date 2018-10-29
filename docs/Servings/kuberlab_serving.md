@@ -144,3 +144,81 @@ No other specific options are provided.
 ## Hooks
 
 This section describes the possible ways of writing serving hooks and their capabilities.
+
+#### Hooks file structure
+
+Basic hook functions set:
+
+* `init_hook(**params)`: function-initializer. **params** is a dict
+containing all the options passed during start with **-o** flags and also
+containing some additional parameters like **model_path**.
+
+* `preprocess_hook(inputs, ctx, **kwargs)`: Hook which executes before model inference.
+Possible function declarations: `preprocess_hook(inputs)` (*ctx* and *kwargs* unused),
+`preprocess_hook(inputs, ctx)` (*kwargs* unused), `preprocess_hook(inputs, **kwargs)` (*ctx* unused).
+
+* `postprocess_hook(outputs, ctx, **kwargs)`: Hook which executes after model inference.
+Possible function declarations: `postprocess_hook(outputs)` (*ctx* and *kwargs* unused),
+`postprocess_hook(outputs, ctx)` (*kwargs* unused), `postprocess_hook(outputs, **kwargs)` (*ctx* unused).
+
+Arguments in pre/postprocess hooks:
+
+* **inputs** - dict containing input numpy arrays, e.g. `{'input-name': <numpy array>}`
+* **outputs** - dict containing output numpy arrays, e.g. `{'output-name': <numpy array>}`
+* **ctx** - gRPC context object. It can be used to pass data from preprocess hook to postprocess hook. Example:
+we can set some attribute to ctx object in preprocess hook and then read it in postprocess hook.
+* **\*\*kwargs** - key-value arguments from the driver. Each driver has
+a different set of kwargs arguments which passed to the hook (see
+[driver](kuberlab_serving.md#drivers) section for the details)
+
+**Hook example**
+
+Here is a hook example which just log the fact of calling itself.
+
+`hooks.py`
+```python
+import logging
+
+
+LOG = logging.getLogger(__name__)
+
+
+def log(func):
+    def decorator(*args, **kwargs):
+        LOG.info('Running %s...' % func.__name__)
+        return func(*args, **kwargs)
+    return decorator
+
+
+@log
+def init_hook(**params):
+    LOG.info("Got params:")
+    LOG.info(params)
+
+
+@log
+def preprocess(inputs):
+    """Does processing inputs before the model inference.
+
+    For example, here we can do checks, change shape and other ops.
+
+    :param inputs: dict containing input numpy arrays:
+    {'input-name': <numpy array>}
+    :type inputs: dict
+    :return: processed inputs dict
+    """
+    return inputs
+
+
+@log
+def postprocess(outputs):
+    """Does processing outputs after the model inference.
+
+    :param outputs: dict containing input numpy arrays:
+    {'input-name': <numpy array>}
+    :type outputs: dict
+    :return: processed outputs dict
+    """
+    return outputs
+
+```
