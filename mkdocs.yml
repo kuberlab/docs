@@ -24,13 +24,15 @@ pages:
   - 'Datasets': 'Datasets/datasets.md'
   - 'Usage': 'Datasets/usage.md'
   - 'Comands': "Datasets/commands.md"
-- Servings:
-  - 'Start serving': 'Servings/serving_start.md'
-  - 'Serving tool': 'Servings/kuberlab_serving.md'
+- Serving:
+  - 'Start serving': 'Serving/serving_start.md'
+  - 'Serving tool': 'Serving/kuberlab_serving.md'
 - Resources:
   - 'Infrastructure': 'Resources/infrastructure.md'
   - 'Clusters': 'Resources/Clusters.md'
   - 'Storage': 'Resources/KibernetikaStorage.md'
+- Tools
+  - "kdataset" : 'Tools/kdataset.md'
 - Tutorials:
   - 'Project Page Tour': 'Tutorials/project_page.md'
   - 'Using OpenVINO': 'Tutorials/openvino.md'
