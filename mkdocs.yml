@@ -34,5 +34,7 @@ nav:
 - Tutorials:
   - 'Project Page Tour': 'Tutorials/project_page.md'
   - 'Using OpenVINO': 'Tutorials/openvino.md'
+- HowTo:
+  - 'Tran CIFAR-10 Model from scratch using Kibernetika.AI': 'HowTo/cifar-10.md'
 - About:
   - 'Copyright': 'About/about.md'
