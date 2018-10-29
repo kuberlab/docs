@@ -1,4 +1,4 @@
-# Tran CIFAR-10 Model from scratch using Kibernetika.AI
+# Train CIFAR-10 Model from scratch using Kibernetika.AI
 
 This tutorial shows basic steps required for train CIFAR-10 model using original source code from https://github.com/tensorflow/models/tutorials/image/cifar10_estimator
 
@@ -28,12 +28,7 @@ Basically we defined following parameters:
 - Execution Directory: $SRC_DIR refer to location our CIFAR-10 source code
 - Execution Command: 
 >
-```
-mkdir /tmp/cifar-10
-&& python generate_cifar10_tfrecords.py --data-dir=/tmp/cifar-10 
-&& cd /tmp/cifar-10
-&& kdataset push $WORKSPACE_NAME cifar-10:1.0.0 --create
-```
+```mkdir /tmp/cifar-10 && python generate_cifar10_tfrecords.py --data-dir=/tmp/cifar-10 && cd /tmp/cifar-10 &&  kdataset push $WORKSPACE_NAME cifar-10:1.0.0 --create```
 
 During running out new task following steps will be executed:
 
