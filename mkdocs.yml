@@ -6,7 +6,7 @@ markdown_extensions:
 - toc:
     permalink: "#"
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
-nav:
+pages:
 - Home: 'index.md'
 - Settings:
   - 'User': 'Settings/user.md'
