@@ -1,3 +1,7 @@
+# Dataset versions
+
+All datasets are versioned. So user can create, clone and delete dataset's versions and manage version's files.
+
 # Create dataset version
 
 Dataset version can be added in UI. User should go to "Versions" tab and click "+ New Version" button.
@@ -16,7 +20,7 @@ Just created dataset's version marked as Editing, it means that user can change 
 
 ![](../img/datasets-versions/img2.png)
 
-User can upload new files and delete existing ones. To upload file to subdirectory it needs to set required upload path to "upload path" field. Not existing directories will be create automatically.
+User can upload new files and delete existing ones. To upload file to subdirectory it needs to set required upload path to "upload path" field. Files are uploading with the same names as original files. For example, to upload file `my-file.txt` to dataset's version to directory `dir/subdir` user should upload file named `my-file.txt` with typing `dir/subdir` in "upload path" field, final uploaded file will have path `dir/subdir/my-file.txt`. Not existing directories will be create automatically.
 
 To delete file or directory user should click to bucket icon near object he wants to delete.
 

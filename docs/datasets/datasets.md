@@ -1,6 +1,6 @@
 # Datasets
 
-Recognizing the importance of the data, and complexity of the data processing, **Kibernetika** implemented the Dataset object. This object can be loaded, versioned, accessed, and commented on. The Dataset object can be published in the **Kibernetika** public catalog or it can be kept in a private workspace as well. **Kibernetika** also provides a number of open publicly available datasets as part of the public catalogs, so that using them is convenient and does not require further slow data downloads.
+Recognizing the importance of the data, and complexity of the data processing, **Kibernetika** implemented the Dataset object. This object can be loaded, [versioned](versions.md), accessed, and commented on. The Dataset object can be published in the **Kibernetika** public catalog or it can be kept in a private workspace as well. **Kibernetika** also provides a number of open publicly available datasets as part of the public catalogs, so that using them is convenient and does not require further slow data downloads.
 
 To use the Dataset object in the **Kibernetika** project, a user needs to add ***Dataset*** as a source in the project, and it will become available to the Jupyter Notebook as well as the Python or R execution environments.
 
@@ -30,6 +30,17 @@ Dataset info can be updated only in UI.
 User can change dataset's visibility option (Publish/Unpublish option): make dataset published (available for all users) or not (available only for users who can manage datasets in current organization).
 
 Also user can change dataset's picture.
+
+# Fork dataset
+
+User can use in his projects all dataset from the same with the project organization and **only published datasets from other organizations** despite the dataset can be available for user.
+So if user wants to use private dataset from another organization, he can fork this dataset to project's organization.
+
+Fork action makes dataset copy in target organization with the same name. So before forking user should ensure that there's no dataset with the same name in target organization.
+Also user should ensure that he can manage datasets in target organization.
+Fork copies **only commited dataset versions**.
+
+User can fork dataset by clicking "Fork" button and choosing target organization.
 
 # Delete dataset
 
