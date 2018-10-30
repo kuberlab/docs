@@ -34,7 +34,7 @@ Recognizing the importance of the data, and complexity of the data processing, *
 
 To use the <u>Dataset</u> object in the project, a user needs to add <u>Dataset</u> as a volume in the project storage tab or during the project configuration, and it will become available to the Jupyter Notebook as well as the Python or R execution environments.
 
-For loading of the new dataset see [Dataset Usage](/Datasets/usage.md) for details.
+For loading of the new dataset see [Dataset Usage](../datasets/usage.md) for details.
 
 
 
