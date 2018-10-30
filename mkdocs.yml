@@ -16,7 +16,9 @@ pages:
   - 'Create New Project': 'projects/create-new-project.md'
   - 'Working With Projects': 'projects/working-with-projects.md'
 - 'Datasets':
-  - 'Datasets Managment': 'datasets/datasets.md'
+  - 'Datasets Management': 'datasets/datasets.md'
+- 'Models':
+  - 'Models Management': 'models/models.md'
 - 'Serving':
   - 'Start serving': 'serving/serving-start.md'
   - 'Serving tool': 'serving/kibernetika-serving.md'
