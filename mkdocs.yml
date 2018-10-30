@@ -6,7 +6,7 @@ markdown_extensions:
 - toc:
     permalink: "#"
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
-nav:
+pages:
 - 'Home': 'index.md'
 - 'Settings':
   - 'User': 'settings/user.md'
@@ -21,7 +21,9 @@ nav:
   - 'Add New Project Template': 'catalog/add-new-project-template.md'
   - 'Add New Application': 'catalog/add-new-application.md'
 - 'Datasets':
+  - 'Overview': 'datasets/overview.md'
   - 'Datasets': 'datasets/datasets.md'
+  - 'Dataset Versions': 'datasets/versions.md'
   - 'Usage': 'datasets/usage.md'
   - 'Comands': "datasets/commands.md"
 - 'Serving':
