@@ -99,6 +99,14 @@ Existing version can be cloned as new editing one by clicking button "New versio
 
 This action looks like creating new version, but cloned version will have all files from source version.
 
+# Delete version
+
+Dataset version can be deleted from UI using context menu "Delete".
+
+![](../img/datasets-versions/img6.png)
+
+Also dataset version can be deleted with [kdataset tool](../tools/kdataset.md).
+
 ### Use datasets inside project
 
 To use the Dataset object in the **Kibernetika** project, a user needs to add ***Dataset*** as a source in the project, and it will become available to the Jupyter Notebook as well as the Python or R execution environments.
