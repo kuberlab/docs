@@ -26,13 +26,14 @@ nav:
   - 'Comands': "datasets/commands.md"
 - 'Serving':
   - 'Start serving': 'serving/serving_start.md'
-  - 'Serving tool': 'serving/kuberlab_serving.md'
+  - 'Serving tool': 'serving/kibernetika_serving.md'
 - 'Resources':
   - 'Infrastructure': 'resources/infrastructure.md'
   - 'Clusters': 'resources/clusters.md'
   - 'Storage': 'resources/kibernetika-storage.md'
 - 'Tools':
   - 'kdataset': 'tools/kdataset.md'
+  - 'kibernetika-serving': 'serving/kibernetika_serving.md'
 - 'Tutorials':
   - 'Project Page Tour': 'tutorials/project_page.md'
   - 'Using OpenVINO': 'tutorials/openvino.md'

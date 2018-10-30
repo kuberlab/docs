@@ -1,11 +1,11 @@
-## kuberlab-serving
+## kibernetika-serving (ex. kuberlab-serving)
 
 This is a document describing the possibilities and parameters of
-**kuberlab-serving** tool.
+**kibernetika-serving** tool.
 
 ## What is it?
 
-**kuberlab-serving** tool is a generic machine-learning model runner.
+**kibernetika-serving** tool is a generic machine-learning model runner.
 Basically, it starts the gRPC server and receives google protobuf messages
 (just like `tensorflow_model_server` does) and optionally, it can start
 HTTP proxy to that gRPC server, so the requests to the server become much
@@ -19,9 +19,9 @@ It supports the following machine learning frameworks and formats:
 * **PyTorch**
 
 Also, it can be run without model and all required logic may be in the
-process hooks (see [hooks](kuberlab_serving.md#hooks) section below), for that need to take `null` driver.
+process hooks (see [hooks](kibernetika_serving.md#hooks) section below), for that need to take `null` driver.
 
-**kuberlab-serving** tool is available in *serving* containers:
+**kibernetika-serving** tool is available in *serving* containers:
 
 * **kuberlab/serving:latest** (basic image, doesn't include OpenVINO support)
 * **kuberlab/serving/latest-gpu** (includes GPU-related stuff)
@@ -29,11 +29,13 @@ process hooks (see [hooks](kuberlab_serving.md#hooks) section below), for that n
 
 ## CLI interface
 
-Once you have an access to **kuberlab-serving** executable, you are ready to use it.
+Once you have an access to **kibernetika-serving** executable, you are ready to use it.
 Let's see the options and flags which can be provided during start.
 
+**Note**: There is an alias **kserving** for **kibernetika-serving**.
+
 ```
-usage: kuberlab-serving [-h] [--driver DRIVER] --model-path MODEL_PATH
+usage: kibernetika-serving [-h] [--driver DRIVER] --model-path MODEL_PATH
                         [--hooks HOOKS] [--option OPTION] [--port <int>]
                         [--http-enable]
                         [--http-server-command HTTP_SERVER_COMMAND]
@@ -169,7 +171,7 @@ Arguments in pre/postprocess hooks:
 we can set some attribute to ctx object in preprocess hook and then read it in postprocess hook.
 * **\*\*kwargs** - key-value arguments from the driver. Each driver has
 a different set of kwargs arguments which passed to the hook (see
-[driver](kuberlab_serving.md#drivers) section for the details)
+[driver](kibernetika_serving.md#drivers) section for the details)
 
 **Hook example**
 

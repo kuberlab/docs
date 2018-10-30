@@ -30,7 +30,7 @@ Usually, execution command for serving is a call to model runner command
 line tool, such as:
 
 * **tensorflow_model_server**
-* **kuberlab-serving**
+* **kibernetika-serving**
 
 For **tensorflow_model_server**, it may be like
 
@@ -38,14 +38,14 @@ For **tensorflow_model_server**, it may be like
 tensorflow_model_server --model_base_path=<model_versions_dir> --model_name=my-model --port=9000
 ```
 
-For **kuberlab-serving**, it may be like
+For **kibernetika-serving**, it may be like
 
 ```
-kuberlab-serving --driver tensorflow --model-path <saved-model-dir> --port 9000
+kibernetika-serving --driver tensorflow --model-path <saved-model-dir> --port 9000
 ```
 
-**Note:** For the **kuberlab-serving** tool description and details, see
-[here](kuberlab_serving.md).
+**Note:** For the **kibernetika-serving** tool description and details, see
+[here](kibernetika_serving.md).
 
 * **Work Directory** - specifies command current directory. Usually set to
 one of volume directory alias - such as **$SRC_DIR**
@@ -66,8 +66,8 @@ one of volume directory alias - such as **$SRC_DIR**
 * **CPU** - Docker Image used when not using GPU.
 * **GPU** - Docker Image used for GPU
 
-**Note**: For **kuberlab-serving**, image **kuberlab/serving:latest** is
-usually used, see [kuberlab-serving](kuberlab_serving.md) document for the details.
+**Note**: For **kibernetika-serving**, image **kuberlab/serving:latest** is
+usually used, see [kibernetika-serving](kibernetika_serving.md) document for the details.
 
 * **Environment variables** - pass additional environment variables
 * **Ports** - specify ports which will be opened in container: **name**, **protocol**, **port number**
