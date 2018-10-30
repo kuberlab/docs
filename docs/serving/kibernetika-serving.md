@@ -19,7 +19,7 @@ It supports the following machine learning frameworks and formats:
 * **PyTorch**
 
 Also, it can be run without model and all required logic may be in the
-process hooks (see [hooks](kibernetika_serving.md#hooks) section below), for that need to take `null` driver.
+process hooks (see [hooks](kibernetika-serving.md#hooks) section below), for that need to take `null` driver.
 
 **kibernetika-serving** tool is available in *serving* containers:
 
@@ -171,7 +171,7 @@ Arguments in pre/postprocess hooks:
 we can set some attribute to ctx object in preprocess hook and then read it in postprocess hook.
 * **\*\*kwargs** - key-value arguments from the driver. Each driver has
 a different set of kwargs arguments which passed to the hook (see
-[driver](kibernetika_serving.md#drivers) section for the details)
+[driver](kibernetika-serving.md#drivers) section for the details)
 
 **Hook example**
 

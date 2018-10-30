@@ -27,17 +27,17 @@ pages:
   - 'Usage': 'datasets/usage.md'
   - 'Comands': "datasets/commands.md"
 - 'Serving':
-  - 'Start serving': 'serving/serving_start.md'
-  - 'Serving tool': 'serving/kibernetika_serving.md'
+  - 'Start serving': 'serving/serving-start.md'
+  - 'Serving tool': 'serving/kibernetika-serving.md'
 - 'Resources':
   - 'Infrastructure': 'resources/infrastructure.md'
   - 'Clusters': 'resources/clusters.md'
   - 'Storage': 'resources/kibernetika-storage.md'
 - 'Tools':
   - 'kdataset': 'tools/kdataset.md'
-  - 'kibernetika-serving': 'serving/kibernetika_serving.md'
+  - 'kibernetika-serving': 'serving/kibernetika-serving.md'
 - 'Tutorials':
-  - 'Project Page Tour': 'tutorials/project_page.md'
+  - 'Project Page Tour': 'tutorials/project-page.md'
   - 'Using OpenVINO': 'tutorials/openvino.md'
 - 'HowTo':
   - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'

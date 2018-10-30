@@ -45,7 +45,7 @@ kibernetika-serving --driver tensorflow --model-path <saved-model-dir> --port 90
 ```
 
 **Note:** For the **kibernetika-serving** tool description and details, see
-[here](kibernetika_serving.md).
+[here](kibernetika-serving.md).
 
 * **Work Directory** - specifies command current directory. Usually set to
 one of volume directory alias - such as **$SRC_DIR**
@@ -67,7 +67,7 @@ one of volume directory alias - such as **$SRC_DIR**
 * **GPU** - Docker Image used for GPU
 
 **Note**: For **kibernetika-serving**, image **kuberlab/serving:latest** is
-usually used, see [kibernetika-serving](kibernetika_serving.md) document for the details.
+usually used, see [kibernetika-serving](kibernetika-serving.md) document for the details.
 
 * **Environment variables** - pass additional environment variables
 * **Ports** - specify ports which will be opened in container: **name**, **protocol**, **port number**
