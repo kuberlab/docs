@@ -25,7 +25,6 @@ pages:
   - 'Datasets': 'datasets/datasets.md'
   - 'Dataset Versions': 'datasets/versions.md'
   - 'Usage': 'datasets/usage.md'
-  - 'Comands': "datasets/commands.md"
 - 'Serving':
   - 'Start serving': 'serving/serving-start.md'
   - 'Serving tool': 'serving/kibernetika-serving.md'
