@@ -26,5 +26,11 @@ You could add following Service accounts:
 # User Token
 You can create a personal access token and use it in place of a password for **Kibernetika** API or for CLI tools.
 
+![](../img/settings/settings5.png)
+
+**Note:** token is displaying only once just after creating. Copy it to safe place right after creation, it will be unable to restore token, it needs to create new token if old one has been lost.
+
 # Delete User
-Delete User will allow you to completely remove your user from **Kibernetika** service. This action will delete your account and all data associated with it. <mark>ATTENTION:</mark> Be careful, all your data will be lost after this action!
+Delete User will allow you to completely remove your user from **Kibernetika** service. This action will delete your account and all data associated with it.
+
+<mark>ATTENTION:</mark> Be careful, all your data will be lost after this action!
