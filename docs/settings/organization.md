@@ -6,7 +6,7 @@ An organization is a construct used to centralize projects and resources that ar
 
 Creating a new organization is done from the 'settings' page.
 
-![](../img/settings/settting3.png)
+![](../img/settings/settings3.png)
 
 You will need to fill in the following fields:
 
