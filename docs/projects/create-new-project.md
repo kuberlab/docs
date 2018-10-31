@@ -1,4 +1,6 @@
-Project is the environment for development and lifecycle management of ML/AI application. You can find a lot of templates and pre-built Projects in the **Kibernetika** [catalog](../catalog/work-with-catalog.md#Install project from catalog). You can create new project using [UI interface](create-new-project.md#Creating empty project from UI interface) or [using command line tool](create-new-project.md#Creating empty project using **Kibernetika** command line tool).
+Project is the environment for development and lifecycle management of ML/AI application. You can find a lot of templates and pre-built Projects in the **Kibernetika** catalog.
+
+You can create new project [using UI interface](#creating-empty-project-from-ui-interface) or [using command line tool](#creating-empty-project-using-kibernetika-command-line-tool).
 
 ### Creating empty project from UI interface
 1. Open your workspace and select projects tab.
@@ -7,7 +9,7 @@ Project is the environment for development and lifecycle management of ML/AI app
 ![](../img/project/wizard-1.png)
 4. Set your project name. Valid name must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumerics between.
 ![](../img/project/wizard-3.png)
-5. Make basic configuration of your project and select a ***Kibernetika Storage*** (/Resources/KibernetikaStorage.md) or a ***cluster storage*** (/Resources/Clusters.md) available for your cluster.
+5. Make basic configuration of your project and select a [Kibernetika Storage](../resources/kibernetika-storage.md) or a ***Cluster Storage*** available for your cluster.
 ![](../img/project/wizard-4.png)
 6. One more time verify the final configuration of the Project and press install button.
 ![](../img/project/wizard-5.png)

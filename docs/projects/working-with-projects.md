@@ -47,7 +47,7 @@ A project requires data sources to be configured for training data, model source
 
 * GIT: Git repository. You can connect you GitHub, GitLab or BitBucket account or use any other git server with your Kibernetika account.
 * NFS: External network file system that supports the NFS protocol.
-* Cluster Storage: Storage attached to your cluster by your administrator (in case of a local cluster), or provided by the Kibernetika service. See [Cluster Storage](../resources/clusters.md) for details.
+* Cluster Storage: Storage attached to your cluster by your administrator (in case of a local cluster), or provided by the Kibernetika service. See ***Cluster Storage*** for details.
 * S3 Bucket: Storage that uses your S3 bucket as a data source.
 
 When you create a project using either the recommended templates, or a tutorial or sample from the Kibernetika catalog, the required sources are automatically created for you. To add new storage or edit the existing entries, click on the "SOURCES" tab in the Project screen.
@@ -85,7 +85,7 @@ This is an external network file system that support the NFS protocol. To connec
 
 ## <a name="cluster-storage"></a>Cluster Storage
 This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
-To connect cluster storage you must specify one of the available cluster storages. See [Cluster Storage](../resources/clusters.md) and [Kibernetika Storage](../resources/kibernetika-storage.md) for information about creating and managing this data source type.
+To connect cluster storage you must specify one of the available cluster storages. See ***Cluster Storage*** and [Kibernetika Storage](../resources/kibernetika-storage.md) for information about creating and managing this data source type.
 
 <mark>ATTENTION</mark>: The following rules are applied to the 'Sub Path' field:
 
