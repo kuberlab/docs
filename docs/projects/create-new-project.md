@@ -2,9 +2,9 @@ Project is the environment for development and lifecycle management of ML/AI app
 
 ### Creating empty project from UI interface
 1. Open your workspace and select projects tab.
-![](../img/project/create1.png)
+![](../img/project/new_project.png)
 2. Press "Create New Project" button or use context menu button to create a new project and choose one of the template to use for your new Project.
-![](../img/project/wizard-1.png)
+![](../img/project/proj_sample_templates.png)
 4. Set your project name. Valid name must be 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumerics between.
 ![](../img/project/wizard-3.png)
 5. Make basic configuration of your project and select a ***Kibernetika Storage*** (/Resources/KibernetikaStorage.md) or a ***cluster storage*** (/Resources/Clusters.md) available for your cluster.

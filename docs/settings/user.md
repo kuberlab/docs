@@ -1,7 +1,7 @@
 # User Settings
 To change personal info or configure access to external repositories and service account go to settings page.
 
-![](../img/settings/settings1.png)
+![](../img/settings/settings.png)
 
 # Repositories
 You can add  OAuth based connection to your external git repositories or to your google account. This is required if you are planning to create your own clusters or want to be able to connect your git repositories to your projects as a storage volume.
