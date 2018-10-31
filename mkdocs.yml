@@ -7,36 +7,30 @@ markdown_extensions:
     permalink: "#"
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 pages:
-- Home: 'index.md'
-- Settings:
-  - 'User': 'Settings/user.md'
-  - 'Organization': 'Settings/organization.md'
-  - 'Billing': 'Settings/billing.md'
-- Projects: 
-  - 'Create New Project': 'Projects/Create New Project.md'
-  - 'Working With Projects': 'Projects/Working With Projects.md'
-- Catalog:
-  - 'Catalog': 'Catalog/Catalog.md'
-  - 'Work With Catalog': 'Catalog/Work With Catalog.md'
-  - 'Add New Project Template': 'Catalog/Add New Project Template.md'
-  - 'Add New Application': 'Catalog/Add New Application.md'
-- Datasets: 
-  - 'Datasets': 'Datasets/datasets.md'
-  - 'Usage': 'Datasets/usage.md'
-  - 'Comands': "Datasets/commands.md"
-- Serving:
-  - 'Start serving': 'Serving/serving_start.md'
-  - 'Serving tool': 'Serving/kuberlab_serving.md'
-- Resources:
-  - 'Infrastructure': 'Resources/infrastructure.md'
-  - 'Clusters': 'Resources/Clusters.md'
-  - 'Storage': 'Resources/KibernetikaStorage.md'
-- Tools
-  - "kdataset" : 'Tools/kdataset.md'
-- Tutorials:
-  - 'Project Page Tour': 'Tutorials/project_page.md'
-  - 'Using OpenVINO': 'Tutorials/openvino.md'
-- HowTo:
-  - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'HowTo/cifar-10.md'
-- About:
-  - 'Copyright': 'About/about.md'
+- 'Home': 'index.md'
+- 'Settings':
+  - 'User': 'settings/user.md'
+  - 'Organization': 'settings/organization.md'
+  - 'Billing': 'settings/billing.md'
+- 'Projects':
+  - 'Create New Project': 'projects/create-new-project.md'
+  - 'Working With Projects': 'projects/working-with-projects.md'
+- 'Datasets':
+  - 'Datasets Management': 'datasets/datasets.md'
+- 'Models':
+  - 'Models Management': 'models/models.md'
+- 'Serving':
+  - 'Start serving': 'serving/serving-start.md'
+  - 'Serving tool': 'serving/kibernetika-serving.md'
+- 'Resources':
+  - 'Storage': 'resources/kibernetika-storage.md'
+- 'Tools':
+  - 'kdataset': 'tools/kdataset.md'
+  - 'kibernetika-serving': 'serving/kibernetika-serving.md'
+- 'Tutorials':
+  - 'Project Page Tour': 'tutorials/project-page.md'
+  - 'Using OpenVINO': 'tutorials/openvino.md'
+- 'HowTo':
+  - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'
+- 'About':
+  - 'Copyright': 'about/about.md'

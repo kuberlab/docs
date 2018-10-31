@@ -4,8 +4,8 @@ This tutorial shows basic steps required to train CIFAR-10 model using original 
 
 ### Install Tensorflow project
 
-- Start creating a new project in your Workspace. [More details](/Projects/Create New Project/)
-- Set Tensoflow version 1.9.0
+- Start creating a new project in your Workspace. [More details](../projects/create-new-project.md)
+- Set Tensorflow version 1.9.0
 - Set source location to __https://github.com/tensorflow/models/tutorials/image/cifar10_estimator__, in this case, __https://github.com/tensorflow/models__ will be used as a Source repository and __models/tutorials/image/cifar10_estimator__ as a subpath. Contents of __https://github.com/tensorflow/models/tutorials/image/cifar10_estimator__ will be visible inside Jupyter or running Job under $SRC_DIR path, usually, SRC_DIR is an alias for __/norebooks/src__
 
 ### Prepare Dataset

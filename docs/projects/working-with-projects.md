@@ -47,7 +47,7 @@ A project requires data sources to be configured for training data, model source
 
 * GIT: Git repository. You can connect you GitHub, GitLab or BitBucket account or use any other git server with your Kibernetika account.
 * NFS: External network file system that supports the NFS protocol.
-* Cluster Storage: Storage attached to your cluster by your administrator (in case of a local cluster), or provided by the Kibernetika service. See [Cluster Storage](/Resources/Clusters.md) for details.
+* Cluster Storage: Storage attached to your cluster by your administrator (in case of a local cluster), or provided by the Kibernetika service. See [Cluster Storage](../resources/clusters.md) for details.
 * S3 Bucket: Storage that uses your S3 bucket as a data source.
 
 When you create a project using either the recommended templates, or a tutorial or sample from the Kibernetika catalog, the required sources are automatically created for you. To add new storage or edit the existing entries, click on the "SOURCES" tab in the Project screen.
@@ -65,9 +65,9 @@ Configuration:
 ## <a name="source"></a>Git data source
 To connect a git data source you need to specify the following fields:
 
-* Repository: Git repository path, like https://github.com/Kibernetika-catalog/tensorflow. You can use the "Expand" button to specify repository details if you have connected a git account in the [user settings](/Settings/User.md#repositories).
+* Repository: Git repository path, like https://github.com/Kibernetika-catalog/tensorflow. You can use the "Expand" button to specify repository details if you have connected a git account in the [user settings](../settings/user.md#repositories).
 * Sub Path - by default content of git repository will be visible in the Project under "MountPath/RepoName". By specifying Sub Path you can change this behavior. For example if your repository has "src" folder and you want to mount its content to  "MountPath/" you should set "Sub Path" to "RepositoryName/src".
-* Account - Account must be set for private repository if you want to be able to commit changes. You need to provide secret that hold user private data, like access key or deploy key. See [service account management](/Settings/User.md#service-accounts)
+* Account - Account must be set for private repository if you want to be able to commit changes. You need to provide secret that hold user private data, like access key or deploy key. See [service account management](../settings/user.md#service-accounts)
 
 Note that the "Account" field is required only if you have a private Github repository. Unless you have such a repository configured in the user settings, this field will remain unavailable (set to "without account").
 
@@ -85,7 +85,7 @@ This is an external network file system that support the NFS protocol. To connec
 
 ## <a name="cluster-storage"></a>Cluster Storage
 This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
-To connect cluster storage you must specify one of the available cluster storages. See [Cluster Storage](/Resources/Clusters.md) and [Kibernetika Storage](/Resources/Kibernetika Storage.md) for information about creating and managing this data source type.
+To connect cluster storage you must specify one of the available cluster storages. See [Cluster Storage](../resources/clusters.md) and [Kibernetika Storage](../resources/kibernetika-storage.md) for information about creating and managing this data source type.
 
 <mark>ATTENTION</mark>: The following rules are applied to the 'Sub Path' field:
 
@@ -100,7 +100,7 @@ This is storage that allows working with S3 bucket data. To connect a S3 source 
 
 * Server: The address of your S3 server. Leave it empty for Amazon S3.
 * Bucket: The bucket name.
-* Account: Secret that holds the user's private credentials that will be used for the S3 connection. See [service account management](/Settings/User.md#service-accounts)
+* Account: Secret that holds the user's private credentials that will be used for the S3 connection. See [service account management](../settings/user.md#Service Accounts)
 
 ![](../img/project/s3-storage.png)
 

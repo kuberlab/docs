@@ -23,9 +23,9 @@ After an organization has been created, you can create different teams under the
 
 # Service Accounts
 
-See [user service accounts](/Settings/user.md#service-accounts) for details.
+See [user service accounts](../settings/user.md#service-accounts) for details.
 
 # Billing
 
-See [user billing](/Settings/User.md#billing) for details.
+See [user billing](../settings/billing.md) for details.
 
