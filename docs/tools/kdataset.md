@@ -5,13 +5,14 @@ Usage: kdataset \[command]
 
 Available Commands:
 
- * **dataset-delete**:	Delete specific dataset.
- * **dataset-list**:		List datasets for current workspace.
+ * **bash-completion**: Generates bash completion scripts
+ * **delete**:	        Delete specific catalog entity.
+ * **list**:		    List catalog entities for the given workspace.
  * **help**:			Help for any kdataset command.
- * **pull**:			Download the dataset archive.
- * **push**:			Push the data set within current directory.
- * **version-delete**:	Delete a specific version of the data set.
- * **version-list**:		List all versions for the current data set.
+ * **pull**:			Download the data entity archive.
+ * **push**:			Push the data within the current directory.
+ * **version-delete**:	Delete specific version of the catalog entity.
+ * **version-list**:	List versions for the given catalog entity.
 
 Flags:
 
@@ -20,23 +21,23 @@ Flags:
  * **-h**, **--help**       help for kdataset
  * **--insecure**           Enable insecure SSL/TLS connection (skip verify).
  * **--log-level** string   Logging level. One of (debug, info, warning, error) (default "info")
- * **--type** entityType    Choose entityType type for request: [dataset model] (default dataset)
+ * **--type** entityType    Choose entityType type for request: \[dataset model] (default dataset)
  * **--url** string         Base url to dataset storage.
  * **--version**            version for kdataset
 
 ## kdataset commands
 
-##### dataset-delete
+##### delete
 
-Usage: ***kdataset dataset-delete*** <i>workspace dataset-name [flags]</i>
+Usage: ***kdataset delete*** *workspace entity-name [flags]*
 
-##### dataset-list
+##### list
 
-Usage: ***kdataset dataset-list*** <i>workspace [flags]</i>
+Usage: ***kdataset list*** *workspace [flags]*
 
 ##### pull
 
-Usage: ***kdataset pull*** <i>workspace dataset-name:version [-O output-file.tar]</i> [flags]
+Usage: ***kdataset pull*** *workspace entity-name:version [-O output-file.tar] [flags]*
 
 Flags:
 
@@ -44,26 +45,26 @@ Flags:
 
 ##### push
 
-Usage: ***kdataset push*** <i>workspace dataset-name:version [flags]</i>
+Usage: ***kdataset push*** *workspace entity-name:version [flags]*
 
 Flags:
 
  * --chunk-size int:      Chunk-size for scanning (default 512000).
  * -c, --concurrency int: Number of concurrent request to server (default 8).
- * --create:		      Create dataset in cloud-dealer if not exists.
+ * --create:		      Create entity in catalog if not exists.
  * --comment string:      Comment for the new version
- * -f,  --force:	      Force dataset uploading regardless warnings.
+ * -f,  --force:	      Force uploading regardless warnings.
  * --publish              Newly created dataset will be public. Only used in conjunction with --create.
  * -w, --websocket:	      Use websocket for connecting to server. Decreases the number of
 requests.
 
 ##### version-delete
 
-Usage: ***kdataset version-delete*** <i>workspace dataset-name:version [flags]</i>
+Usage: ***kdataset version-delete*** *workspace entity-name:version [flags]*
 
 ##### version-list
 
-Usage: ***kdataset version-list*** <i>workspace dataset-name [flags]</i>
+Usage: ***kdataset version-list*** *workspace entity-name [flags]*
 
 ## Examples:
 
