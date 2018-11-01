@@ -83,7 +83,7 @@ _Notes:_
 
 * __$TRAINING_DIR__ is an alias for preconfigured training directory, see __Sources__ tab
 * __$BUILD_ID__ is an alias for sequential job id, every running job has a unique id
-* __$GPU_COUNT__ is an alias for number GPU allocated for execution on one compute node, if you set one or more GPUs, __--train-batch-size__ option must set in command and it must be multiple of GPUs number, for example `--train-batch-size=$GPU_COUNT`
+* __$GPU_COUNT__ is an alias for number GPU allocated for execution on one compute node
 
 You can see execution logs in the __Jobs__ tab. Use __Tensorboard__ tab to see your training progress. The result of model training is available under training directory __$TRAINING_DIR/$BUILD_ID__ (usually __/notebooks/training/1,2…__).
 
@@ -92,12 +92,12 @@ You can see execution logs in the __Jobs__ tab. Use __Tensorboard__ tab to see y
 
 First of all, we need to define resources that will be used for distributed training, e.g. workers and parameter servers.
 
-* Change __Parallel/worker__ execution command to:
+* Change __parallel/worker__ Execution Command to:
 >
 ```TF_CONFIG=$(tf_conf worker --chief_name master) python cifar10_main.py --num-gpus=$GPU_COUNT --train-steps=1000  --data-dir=$DATA_DIR --job-dir=$TRAINING_DIR/$BUILD_ID --sync```
-* Set __Parallel/Worker__ Replicas Count to 2 or more
-* Set __Parallel/Worker__ GPU count to 1
-* Change __Parallel/ps__ execution command to:
+* Set __parallel/worker__ Replicas Count to 2 or more
+* Set __parallel/worker__ GPU Count to 1
+* Change __parallel/ps__ Execution Command to:
 >
 ```TF_CONFIG=$(tf_conf ps --chief_name master) python cifar10_main.py --job-dir=$TRAINING_DIR/$BUILD_ID```
 
