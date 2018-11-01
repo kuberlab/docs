@@ -62,7 +62,7 @@ Configuration:
 
 ![](../img/project/storage-2.png)
 
-## <a name="source"></a>Git data source
+## Git data source
 To connect a git data source you need to specify the following fields:
 
 * Repository: Git repository path, like https://github.com/Kibernetika-catalog/tensorflow. You can use the "Expand" button to specify repository details if you have connected a git account in the [user settings](../settings/user.md#repositories).
@@ -83,7 +83,7 @@ This is an external network file system that support the NFS protocol. To connec
 
 ![](../img/project/nfs-storage.png)
 
-## <a name="cluster-storage"></a>Cluster Storage
+## Cluster Storage
 This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
 To connect cluster storage you must specify one of the available cluster storages. See ***Cluster Storage*** and [Kibernetika Storage](../resources/kibernetika-storage.md) for information about creating and managing this data source type.
 
@@ -95,7 +95,7 @@ To connect cluster storage you must specify one of the available cluster storage
 
 ![](../img/project/cluster-storage.png)
 
-## <a name="s3-bucket-storage"></a>S3 Bucket Storage
+## S3 Bucket Storage
 This is storage that allows working with S3 bucket data. To connect a S3 source type you need to specify the following fields:
 
 * Server: The address of your S3 server. Leave it empty for Amazon S3.
@@ -105,13 +105,37 @@ This is storage that allows working with S3 bucket data. To connect a S3 source 
 ![](../img/project/s3-storage.png)
 
 
-
 # History
 This tab shows a list of all resource instances run, with some details about them.
 
-# Log
+# Jobs
 Coming soon.
+
+#Metrics
+This tab shows various metrics of used resources in current project. Resources are grouped by user's tasks, project UIX components (Jupyter, Tensorboard, etc...) and servings.
+
+![Metrics](../img/project/metrics.png)
+
+UIX components and servings metrics can be displayed for user selected time period (from last 5 minutes to 1 last day).
+Tasks metrics can be shown for whole task execution period (but not longer than 1 week) with the user specified interval (from 10 seconds to 1 hour).
+
+The following metrics are available:
+  
+- __CPU usage__ in percents
+- __Memory usage__ in Megabytes
+- __GPU usage__ in percents
+- __GPU memory__ in Megabytes
+- __GPU power draw__ in Watts
+- __GPU temperature__ in Celsius
+
 # Status
-Coming soon.
+Status tab shows actual containers statuses:
+
+![Status](../img/project/status.png)
+
+Also it's available to see events on problem nodes, in following example case we can see problems with repository mounting:
+
+![Status events](../img/project/status-events.png)
+
 # Integrate Project to your workflow engine
 Coming soon.
