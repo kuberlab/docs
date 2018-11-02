@@ -74,31 +74,22 @@ And the last task is validating the result and uploading the new model to model 
 
 ![](../img/tutorials/openvino/openvino23.png)
 
+### Start Serving
+
 After the model is built, we can start the inference portion of this project. 
-Open facenet-classifier model and the version which you just build from your project catalog.  
 
-![](../img/tutorials/openvino/openvino24.png)
+* Open __JOBS__ tab of your project
+* Choose last __pipeline__ finished task and press start ___serv___ from context menu
+* Leave all parameters as is
+* Press start __SERV__
 
-For “Serving”, there are many parameters that we can define. We are setting OpenVino as a driver for the kibernetika.ai inference engine, filling required resources for inference, 
+![](../img/tutorials/openvino-face/serv1.gif)
 
-![](../img/tutorials/openvino/openvino25.png)
+Now you can simple test your model
 
-and docker images that will be used. 
+![](../img/tutorials/openvino-face/serv2.gif)
 
-![](../img/tutorials/openvino/openvino26.png)
-
-Finally, we select a repository that contains additional business logic, for preprocessing and post processing model inputs and outputs.
-
-![](../img/tutorials/openvino/openvino27.png)
-
-Now that everything is in place, we can start serving. 
-
-![](../img/tutorials/openvino/openvino28.png)
-
-Once completed, we can easily test the face detection and recognition service.
-
-![](../img/tutorials/openvino/openvino29.png)
-
+### Retrain Model
 Since data is likely to change over time in the real world, we can easily extend out the original dataset and continuously retrain the model. We call this Continuous Production and is a core funcion of the Kibernetika platform. Simply set up a new version, 1.0.1, add another person, Alex, and some images for that person. Reopen the project, switch the dataset to the new version and rebuild the model.
 
 ![](../img/tutorials/openvino/openvino30.png)
