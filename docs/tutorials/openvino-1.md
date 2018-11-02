@@ -60,6 +60,8 @@ From here, we will switch over to use the generated openvino model.
 
 This brings us to the next part of the project, when we can actually start to train the face recognition model. This includes 3 sub tasks that we cluster together into pipeline task - Align images, train SVM model, and validate results.
 
+>__NOTES:__ Use __pipeline__ task to build model. This task will automatically start align,train and validate tasks. Otherwise you need adjust parameter of each task, default parameters suitable only for whole piplene. 
+
 ![](../img/tutorials/openvino/openvino20.png)
 
 Align performs cropping and will create a new version of the dataset that contains only cropped images.
