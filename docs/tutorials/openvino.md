@@ -52,6 +52,10 @@ We will select the Kiberntika template for the pretrained tensorflow facenet mod
 
 Install the project by setting all required parameters and defining where the training data will reside by selecting the dataset which we previously created.
 
+![](../img/tutorials/openvino/openvino-a.png)
+
+Select dataset for your project. You can use newly created dataset, or existing dataset from the catalog. If you are working in your personal catalog you will need to <b>FORK</b> public dataset to you private catalog.
+
 ![](../img/tutorials/openvino/openvino12.png)
 
 
