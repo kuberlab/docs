@@ -129,7 +129,8 @@ You can start serving directly from __Model__ catalog.
         * Params:
             * name: input, type: bytes
 
-* Choose version that you want to serve and press __SERVE__ verify that all required parameter is filled as on previous step (sometimes it may require refresh page). 
+* Choose version that you want to serve and press __SERVE__ verify that all required parameter is filled as on previous step (sometimes it may require refresh page).
+>NOTES: by default one additional volume __model__ will be added automatically to your serving configuration that will be refer to current(selected) version of model. Don't remove it.
 
 
 ### Retrain Model
