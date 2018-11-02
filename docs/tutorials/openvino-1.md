@@ -91,6 +91,47 @@ Now you can simple test your model
 
 ![](../img/tutorials/openvino-face/serv2.gif)
 
+### Start serving from model catalog
+
+Also new __facenet-classifier__ model will be pushed to __Model__ catalog after our __pipeline__ is done and validation was succeeded with accuracy more than 0.9.
+
+You can start serving directly from __Model__ catalog.
+
+* Choose new created __facenet-classifier__ model in the your __Model__ catalog
+* From context menu chose edit and fill required serving parameters:
+    * You could press __USE TEMPLATE__ button and choose __OpenVino Serving__ to fill some common parameters for  __OpenVino Serving__ backend
+    * Execution command: kuberlab-serving --driver openvino --model-path $FACENET_DIR/facenet.xml --hooks serving_hook.py -o classifier=$MODEL_DIR/classifier.pkl -o flexible_batch_size=True -o resolutions=14x19,19x27,26x37,37x52,52x74,73x104,103x146,145x206,205x290 -o use_tf=true -o tf_path=$FACENET_DIR
+    * Execution directory: $SRC_DIR
+    * Resources:
+        * CPU Requests: 100m
+        * Memory Requests: 64Mi
+        * CPU Max: 4
+        * Memory Max: 4Gi
+        * Replicas: 1
+    * CPU image: kuberlab/serving:latest-openvino
+    * Ports: name: grps, protocol: TCP, port: 9000, target port: 9000
+    * Following volume required:
+        * Source code for pre processing and post processing hook:
+            * Name: src
+            * SubPath: facenet/src
+            * Type: GIT
+            * Repository: https://github.com/kibernetika-ai/facenet
+        * Model for face detection and inception open-vino model:
+            * Name: facenet
+	        * Type: Model
+            * Model: __facenet-pretrained [kuberlab-demo]__ Or __facenet__ model from your catalog that was created after model converting task
+            * Version: 2.0.0 or your version that should looks like __1.x.x-openvino-CPU-xxx__
+    * Serving parameters. Required only for testing using Kibernetika UI.
+	    * Out filter: output
+        * Model: any
+        * Out mime type: image/png
+        * Raw Input: Yes
+        * Params:
+            * name: input, type: bytes
+
+* Choose version that you want to serve and press __SERVE__ verify that all required parameter is filled as on previous step (sometimes it may require refresh page). 
+
+
 ### Retrain Model
 Since data is likely to change over time in the real world, we can easily extend out the original dataset and continuously retrain the model. We call this Continuous Production and is a core funcion of the Kibernetika platform. Simply set up a new version, 1.0.1, add another person, Alex, and some images for that person. Reopen the project, switch the dataset to the new version and rebuild the model.
 
