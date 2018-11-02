@@ -30,6 +30,7 @@ pages:
 - 'Tutorials':
   - 'Project Page Tour': 'tutorials/project-page.md'
   - 'Using OpenVINO': 'tutorials/openvino.md'
+  - 'Using OpenVINO New': 'tutorials/openvino-1.md'
 - 'HowTo':
   - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'
 - 'About':
