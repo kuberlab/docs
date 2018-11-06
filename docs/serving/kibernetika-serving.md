@@ -175,7 +175,7 @@ a different set of kwargs arguments which passed to the hook (see
 
 **Hook example**
 
-Here is a hook example which just log the fact of calling itself.
+Here is a hook example which just logs the fact of calling itself.
 
 `hooks.py`
 ```python

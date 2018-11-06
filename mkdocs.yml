@@ -27,6 +27,7 @@ pages:
 - 'Tools':
   - 'kdataset': 'tools/kdataset.md'
   - 'kibernetika-serving': 'serving/kibernetika-serving.md'
+  - 'python-mlboardclient': 'tools/python-mlboardclient/index.md'
 - 'Tutorials':
   - 'Project Page Tour': 'tutorials/project-page.md'
   - 'Using OpenVINO': 'tutorials/openvino.md'
