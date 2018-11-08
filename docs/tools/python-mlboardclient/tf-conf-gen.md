@@ -5,11 +5,11 @@ to generate **TensorFlow** config for distributed training:
 For worker:
 
 ```bash
-TF_CONF=$(tf_conf worker) python <train-script.py>
+TF_CONFIG=$(tf_conf worker) python <train-script.py>
 ```
 
 For parameter server:
 
 ```bash
-TF_CONF=$(tf_conf ps) python <train-script.py>
+TF_CONFIG=$(tf_conf ps) python <train-script.py>
 ```
