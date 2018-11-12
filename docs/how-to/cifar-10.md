@@ -99,7 +99,7 @@ First, we need to define resources that will be used for distributed training, e
 * Set __parallel/worker__ GPU Count to 1
 * Change __parallel/ps__ Execution Command to:
 >
-```TF_CONFIG=$(tf_conf ps --chief_name master) python cifar10_main.py --job-dir=$TRAINING_DIR/$BUILD_ID --data-dir=$DATA_DIR```
+```TF_CONFIG=$(tf_conf ps --chief_name master) python cifar10_main.py --num-gpus=$GPU_COUNT --train-steps=1000  --data-dir=$DATA_DIR --job-dir=$TRAINING_DIR/$BUILD_ID --sync```
 
 Now we are ready to start distributed training. During execution the following process will be started:
 
