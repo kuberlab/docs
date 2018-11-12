@@ -155,13 +155,13 @@ Basic hook functions set:
 containing all the options passed during start with **-o** flags and also
 containing some additional parameters like **model_path**.
 
-* `preprocess_hook(inputs, ctx, **kwargs)`: Hook which executes before model inference.
-Possible function declarations: `preprocess_hook(inputs)` (*ctx* and *kwargs* unused),
-`preprocess_hook(inputs, ctx)` (*kwargs* unused), `preprocess_hook(inputs, **kwargs)` (*ctx* unused).
+* `preprocess(inputs, ctx, **kwargs)`: Hook which executes before model inference.
+Possible function declarations: `preprocess(inputs)` (*ctx* and *kwargs* unused),
+`preprocess(inputs, ctx)` (*kwargs* unused), `preprocess(inputs, **kwargs)` (*ctx* unused).
 
-* `postprocess_hook(outputs, ctx, **kwargs)`: Hook which executes after model inference.
-Possible function declarations: `postprocess_hook(outputs)` (*ctx* and *kwargs* unused),
-`postprocess_hook(outputs, ctx)` (*kwargs* unused), `postprocess_hook(outputs, **kwargs)` (*ctx* unused).
+* `postprocess(outputs, ctx, **kwargs)`: Hook which executes after model inference.
+Possible function declarations: `postprocess(outputs)` (*ctx* and *kwargs* unused),
+`postprocess(outputs, ctx)` (*kwargs* unused), `postprocess(outputs, **kwargs)` (*ctx* unused).
 
 Arguments in pre/postprocess hooks:
 
@@ -185,20 +185,11 @@ import logging
 LOG = logging.getLogger(__name__)
 
 
-def log(func):
-    def decorator(*args, **kwargs):
-        LOG.info('Running %s...' % func.__name__)
-        return func(*args, **kwargs)
-    return decorator
-
-
-@log
 def init_hook(**params):
     LOG.info("Got params:")
     LOG.info(params)
 
 
-@log
 def preprocess(inputs):
     """Does processing inputs before the model inference.
 
@@ -209,10 +200,10 @@ def preprocess(inputs):
     :type inputs: dict
     :return: processed inputs dict
     """
+    LOG.info('Running preprocess...')
     return inputs
 
 
-@log
 def postprocess(outputs):
     """Does processing outputs after the model inference.
 
@@ -221,6 +212,7 @@ def postprocess(outputs):
     :type outputs: dict
     :return: processed outputs dict
     """
+    LOG.info('Running postprocess...')
     return outputs
 
 ```
