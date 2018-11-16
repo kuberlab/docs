@@ -37,9 +37,10 @@ pages:
 - 'About':
   - 'Copyright': 'about/about.md'
 - 'Misc':
-    'getting-started': 'tools/python-mlboardclient/getting-started.md'
-    'datasets-and-models': 'tools/python-mlboardclient/datasets-and-models.md'
-    'dive-into-tasks': 'tools/python-mlboardclient/dive-into-tasks.md'
-    'tf-conf-gen': 'tools/python-mlboardclient/tf-conf-gen.md'
-    'upload-model': 'tools/python-mlboardclient/upload-model.md'
-    'work-with-tasks': 'tools/python-mlboardclient/work-with-tasks.md'
+   - 'python-mlboardclent':
+      - 'getting-started': 'tools/python-mlboardclient/getting-started.md'
+      - 'datasets-and-models': 'tools/python-mlboardclient/datasets-and-models.md'
+      - 'dive-into-tasks': 'tools/python-mlboardclient/dive-into-tasks.md'
+      - 'tf-conf-gen': 'tools/python-mlboardclient/tf-conf-gen.md'
+      - 'upload-model': 'tools/python-mlboardclient/upload-model.md'
+      - 'work-with-tasks': 'tools/python-mlboardclient/work-with-tasks.md'
