@@ -9,6 +9,7 @@ Also it provides the API for datasets and models.
 ## Contents
 
 * [Getting started](getting-started.md)
+* [Uploading the model](upload-model.md)
 * [Working with tasks](work-with-tasks.md)
 * [Dive into tasks](dive-into-tasks.md)
 * [TensorFlow config for distributed training](tf-conf-gen.md)
