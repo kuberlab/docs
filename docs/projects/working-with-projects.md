@@ -137,5 +137,118 @@ Also it's available to see events on problem nodes, in following example case we
 
 ![Status events](../img/project/status-events.png)
 
+#Simple form
+Project owner can configure simple form in any project to automate dialog with user. Simple form is available in "Simply" tab. Form can be described in YAML. For example, let's take a look to this form:
+
+![Simple form](../img/project/simple-1.png)
+
+User can fill all form fields and click "Build", and special task will be started with specified form values. 
+
+This form is described by the following YAML:
+
+```yaml
+- name: model_name
+  label: Export to model
+  type: string
+  value: object-detection
+  width: 50
+- name: model_version
+  label: Model version
+  type: string
+  value: 1.0.0
+  width: 50
+- name: num_steps
+  label: Train steps quantity
+  type: int
+  value: 1000
+- label: Resize
+  type: group
+  elements:
+  - name: resize_min_dimension
+    label: Minimal resize dimension
+    type: int
+    value: 600
+    width: 50
+  - name: resize_max_dimension
+    label: Miximal resize dimension
+    type: int
+    value: 1024
+    width: 50
+  - name: resize_fixed_width
+    label: Fixed resize width
+    type: int
+    width: 50
+  - name: resize_fixed_height
+    label: Fixed resize height
+    type: int
+    width: 50
+- name: grid_scales
+  label: Grid generator scales
+  type: list
+  value:
+    - 0.25
+    - 0.5
+    - 1
+    - 2
+  width: 50
+  listType: float
+- name: grid_aspect_ratios
+  label: Grid generator aspect ratios
+  type: list
+  value:
+    - 0.5
+    - 1
+    - 2
+  width: 50
+  listType: float
+```
+
+Each form's field is described with the following parameters:
+
+* `name` - parameter's name, required for all fields (but not for groups)
+* `label` - parameter's label, uses `name` if not set
+* `type` - parameter's type, required for all fields and for group, available values see below
+* `value` - default value
+* `width` - field's width in percents (default 100)
+* `listType` - field's type, required for `type: list`, available values as for `type` excepts `list` and `group`
+* `elements` - fields in group, required for `type: group`
+
+Available field types:
+
+* `int`, `int8`, `int16`, `int32`, `int64` - integer value
+* `uint8`, `uint16` - unsigned integer values
+* `float`, `double` - floating point values
+* `byte`, `bytes` - upload file field
+* `string`, `strings` - string value (text field)
+* `list` - multiple values
+* `group` - group of fields
+
+Simple form execution template can be edited in "Edit template" context menu:
+
+![Simple form](../img/project/simple-2.png)
+
+Execution template describes YAML with task's name and resources, for example:
+
+```yaml
+name: example
+resources:
+- workDir: $SRC_DIR
+  command: python example.py --parameter_name {{ .parameter_value }}
+  default_volume_mapping: true
+  images:
+    cpu: kuberlab/tensorflow:cpu-36-1.7.0-full
+    gpu: kuberlab/tensorflow:gpu-36-1.7.0-full
+  name: worker
+  replicas: 1
+  resources:
+    limits:
+      cpu: "1"
+      memory: 8Gi
+    requests:
+      cpu: 100m
+      memory: 64Mi
+  restartPolicy: Never
+``` 
+
 # Integrate Project to your workflow engine
 Coming soon.
