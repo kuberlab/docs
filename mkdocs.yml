@@ -34,6 +34,7 @@ pages:
   - 'Using OpenVINO New': 'tutorials/openvino-1.md'
 - 'HowTo':
   - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'
+  - 'Train model for object-detecion using object-detection API': 'how-to/object-detection-pets.md'
 - 'About':
   - 'Copyright': 'about/about.md'
 - 'Misc':
