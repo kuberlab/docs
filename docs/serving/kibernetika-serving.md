@@ -216,3 +216,92 @@ def postprocess(outputs):
     return outputs
 
 ```
+
+## Launching multiple models
+
+For launching more than 1 model, need to specify appropriate hooks for pre- and postprocessing in order
+to connect current model output and a next model input. At the end - all the models are lining up in one
+pipeline: `pre-hook1 -> model1 -> post-hook1 -> pre-hook2 -> model2 -> post-hook2`
+
+Therefore, hook file requires more than one pre- and postprocessing functions. For doing that, `preprocess`
+ and `postprocess` objects in the hooks file must be a **list of functions** with `model-number` length.
+`None` in the list may mean that there is no hook in this place.
+
+#### Multiple models hooks file example
+
+```python
+mport logging
+
+
+LOG = logging.getLogger(__name__)
+
+
+def log(func):
+    def decorator(*args):
+        LOG.info('Running %s...' % func.__name__)
+        return func(*args)
+    return decorator
+
+
+def init_hook(**params):
+    LOG.info("Got params:")
+    LOG.info(params)
+
+
+@log
+def preprocess1(inputs):
+    return inputs
+
+
+@log
+def preprocess2(inputs):
+    return inputs
+
+
+@log
+def postprocess1(outputs):
+    return outputs
+
+
+@log
+def postprocess2(outputs):
+    return outputs
+
+
+preprocess = [preprocess1, preprocess2]
+postprocess = [postprocess1, postprocess2]
+```
+
+**Partially implemented hooks:**
+
+```python
+mport logging
+
+
+LOG = logging.getLogger(__name__)
+
+
+def log(func):
+    def decorator(*args):
+        LOG.info('Running %s...' % func.__name__)
+        return func(*args)
+    return decorator
+
+
+def init_hook(**params):
+    LOG.info("Got params:")
+    LOG.info(params)
+
+
+@log
+def preprocess1(inputs):
+    return inputs
+
+@log
+def postprocess2(outputs):
+    return outputs
+
+
+preprocess = [preprocess1, None]
+postprocess = [None, postprocess2]
+```
