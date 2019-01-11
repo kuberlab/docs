@@ -313,3 +313,42 @@ def postprocess2(outputs):
 preprocess = [preprocess1, None]
 postprocess = [None, postprocess2]
 ```
+
+## Ignore (skip) model inference
+
+In some cases it needs to skip model inference (more useful when using
+multiple models). For example, first model detects faces and the second one -
+emotions on this faces. There is a case where there are no faces on image
+at all - therefore emotion detection doesn't make sense anymore because
+it requires face boxes.
+
+**Example**:
+
+```python
+def preprocess1(inputs):
+    return inputs
+
+def postprocess1(outputs, ctx):
+    # if length of face boxes is 0 -> skip_next is True else False
+    ctx.skip_next = len(outputs.get('face-boxes', [])) == 0
+
+    returnt outputs
+
+def preprocess2(inputs, ctx):
+    if ctx.skip_next:
+        inputs['ml-serving-ignore'] = True
+
+    return inputs
+
+def postprocess2(outputs, ctx):
+    # Was skipped?
+    if ctx.skip_next:
+        # Nothing to return in case if skipped
+        return {}
+
+    return outputs
+
+
+preprocess = [preprocess1, preprocess2]
+postprocess = [postprocess1, postprocess2]
+```
