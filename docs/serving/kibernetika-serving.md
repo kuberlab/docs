@@ -229,8 +229,16 @@ Therefore, hook file requires more than one pre- and postprocessing functions. F
 
 #### Multiple models hooks file example
 
+For the examples below, `kibernetika-serving` may be launched using the following command:
+
+`kibernetika-serving --driver null --model-path any --driver null --model-path any2`
+
+**Note:** The example should work with `null` driver but you might be interested in changing
+`--driver` and `--model-path` params for using your own driver and model. The example merely
+shows a concept itself.
+
 ```python
-mport logging
+import logging
 
 
 LOG = logging.getLogger(__name__)
@@ -275,7 +283,7 @@ postprocess = [postprocess1, postprocess2]
 **Partially implemented hooks:**
 
 ```python
-mport logging
+import logging
 
 
 LOG = logging.getLogger(__name__)
