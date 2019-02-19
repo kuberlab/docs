@@ -1,0 +1,1215 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Working With Projects - Kibernetika Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-36723568-3", "mkdocs.org")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#project-summary" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Kibernetika Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Kibernetika Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Working With Projects
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Kibernetika Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Kibernetika Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Settings
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../settings/user/" title="User" class="md-nav__link">
+      User
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../settings/organization/" title="Organization" class="md-nav__link">
+      Organization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../settings/billing/" title="Billing" class="md-nav__link">
+      Billing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../create-new-project/" title="Create New Project" class="md-nav__link">
+      Create New Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Working With Projects" class="md-nav__link md-nav__link--active">
+      Working With Projects
+    </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Datasets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Datasets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../datasets/datasets/" title="Datasets Management" class="md-nav__link">
+      Datasets Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Models
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Models
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../models/models/" title="Models Management" class="md-nav__link">
+      Models Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Serving
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Serving
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../serving/serving-start/" title="Start serving" class="md-nav__link">
+      Start serving
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../serving/kibernetika-serving/" title="Serving tool" class="md-nav__link">
+      Serving tool
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Resources
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../resources/kibernetika-storage/" title="Storage" class="md-nav__link">
+      Storage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/kdataset/" title="kdataset" class="md-nav__link">
+      kdataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../serving/kibernetika-serving/" title="kibernetika-serving" class="md-nav__link">
+      kibernetika-serving
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/" title="python-mlboardclient" class="md-nav__link">
+      python-mlboardclient
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/project-page/" title="Project Page Tour" class="md-nav__link">
+      Project Page Tour
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/openvino/" title="Using OpenVINO" class="md-nav__link">
+      Using OpenVINO
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/openvino-1/" title="Using OpenVINO New" class="md-nav__link">
+      Using OpenVINO New
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      HowTo
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        HowTo
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to/cifar-10/" title="Train CIFAR-10 Model from scratch using Kibernetika.AI" class="md-nav__link">
+      Train CIFAR-10 Model from scratch using Kibernetika.AI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to/object-detection-pets/" title="Train model for object-detecion using object-detection API" class="md-nav__link">
+      Train model for object-detecion using object-detection API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/about/" title="Copyright" class="md-nav__link">
+      Copyright
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Misc
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Misc
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12-1" type="checkbox" id="nav-12-1">
+    
+    <label class="md-nav__link" for="nav-12-1">
+      python-mlboardclent
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-12-1">
+        python-mlboardclent
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/datasets-and-models/" title="Datasets and Models" class="md-nav__link">
+      Datasets and Models
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/dive-into-tasks/" title="Dive into tasks" class="md-nav__link">
+      Dive into tasks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/tf-conf-gen/" title="TensorFlow distribute configuration" class="md-nav__link">
+      TensorFlow distribute configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/upload-model/" title="Uploading a model" class="md-nav__link">
+      Uploading a model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tools/python-mlboardclient/work-with-tasks/" title="Working with tasks" class="md-nav__link">
+      Working with tasks
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="project-summary">Project Summary<a class="headerlink" href="#project-summary" title="Permanent link">#</a></h1>
+<p>The project summary ('SUMMARY' tab) contains descriptive information and additional materials for your project. You can enter any information here that you want to go with your project. Use the edit (pen) symbol at bottom right to start editing content. The supported format for this content is <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></p>
+<p><img alt="" src="../../img/project/summary-1.png" /></p>
+<p><img alt="" src="../../img/project/summary-2.png" /></p>
+<h1 id="task-management">Task management<a class="headerlink" href="#task-management" title="Permanent link">#</a></h1>
+<p>The typical way to execute your AI application is to run it with tasks ('TASKS' tab). Thus, every project contains a number of tasks that the user can schedule as required. All base project templates and tutorials from the Kibernetika catalog already have some preconfigured tasks. You can modify those tasks, or remove or create new ones.</p>
+<p><img alt="" src="../../img/project/tasks1.png" /></p>
+<p><img alt="" src="../../img/project/tasks2.png" /></p>
+<p>Every task consists of one or more execution entities (like processes or threads) that are called 'resources'. Distributed processing typically requires multiple replicas of resources running in parallel. A resource may have any number of replicas. Each replica is executed inside the container during task execution, and the replicas can communicate with each other through the TCP or UDP protocols.  In the figures above, the tasks and resources are shown in the vertical pane on the left. The upper-level names are the tasks (prepare-data, standalone, parallel, export, workflow, etc.) and the indented names are the resources within each task (upload, worker, ps, etc.) Each resource has a form on the right of the task pane, to control the execution. The following variables are available to control resource execution and replication in an execution container:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Purpose</th>
+<th>Example values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU_COUNT</td>
+<td>Number of GPU instances available for each replica</td>
+<td>0,1, ...,n</td>
+</tr>
+<tr>
+<td>PYTHONPATH</td>
+<td>Location of the python library</td>
+<td>$LIB_DIR:....</td>
+</tr>
+<tr>
+<td>REPLICA_INDEX</td>
+<td>Index of the current resource replica. Required for distributed training</td>
+<td>1,2,...</td>
+</tr>
+<tr>
+<td>upper_case({ResourceName})_NODES</td>
+<td>comma separated list of dns addresses resource replicas</td>
+<td>T1-R1-0-0.R1-0,T1-R1-0-1.R1-0,... (where T1 task name,R1 resource name)</td>
+</tr>
+<tr>
+<td>BUILD_ID</td>
+<td>Id of current task run</td>
+<td>1,2...,n</td>
+</tr>
+<tr>
+<td>upper_case({SourceName})_DIR</td>
+<td>Mount point for Source with name 'SourceName'</td>
+<td>/workspace/src</td>
+</tr>
+</tbody>
+</table>
+<p>The following is a list of parameters used to specify task execution:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+<th>Example values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Execution directory</td>
+<td>Directory to run user commands in</td>
+<td>$SRC_DIR</td>
+</tr>
+<tr>
+<td>Timeout</td>
+<td>Time to wait for a compute resource</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Execution command</td>
+<td>Command to start the compute process</td>
+<td>python styles.py --job_name=worker --train_dir=$TRAINING_DIR/$BUILD_ID  --task_index=$REPLICA_INDEX --ps_hosts=$PS_NODES --worker_hosts=$WORKER_NODES</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Minimum and maximum compute resource requirements</td>
+<td>Requires at least CPU=100m, Memory=62Mi, but no more than CPU=4000m, Memory=8Gi and GPU=1 for each resource replica</td>
+</tr>
+<tr>
+<td>Environment variables</td>
+<td>User defined environment variables</td>
+<td>MY_VARIABLE = value</td>
+</tr>
+<tr>
+<td>Images</td>
+<td>Container images that will be used for cpu and gpu</td>
+<td>(tensorflow/tensorflow:1.2.0,tensorflow/tensorflow:1.2.0-gpu)</td>
+</tr>
+<tr>
+<td>Default volume mapping</td>
+<td>Useful to mount all sources to container as they are defined in the sources</td>
+<td>true or false</td>
+</tr>
+<tr>
+<td>Default mount path</td>
+<td>Fixed prefix to the mount points for all sources</td>
+<td></td>
+</tr>
+<tr>
+<td>Volumes</td>
+<td>Custom sources to be mounted to the container</td>
+<td>(data, subfolder, /mynewfolder/andsubfolder)</td>
+</tr>
+<tr>
+<td>Node Allocator</td>
+<td>For public clouds only. Template to allocate new compute resources on the public cloud if there aren't resources available</td>
+<td>Template name from your cluster configuration</td>
+</tr>
+</tbody>
+</table>
+<h1 id="working-with-sources">Working with sources<a class="headerlink" href="#working-with-sources" title="Permanent link">#</a></h1>
+<p>A project requires data sources to be configured for training data, model source code, results and checkpoints. You can configure all data sources in the "SOURCES" tab and mount it to different Tasks or to specific Project components like Jupyter or Tensorboard. We support the following data source types:</p>
+<ul>
+<li>GIT: Git repository. You can connect you GitHub, GitLab or BitBucket account or use any other git server with your Kibernetika account.</li>
+<li>NFS: External network file system that supports the NFS protocol.</li>
+<li>Cluster Storage: Storage attached to your cluster by your administrator (in case of a local cluster), or provided by the Kibernetika service. See <strong><em>Cluster Storage</em></strong> for details.</li>
+<li>S3 Bucket: Storage that uses your S3 bucket as a data source.</li>
+</ul>
+<p>When you create a project using either the recommended templates, or a tutorial or sample from the Kibernetika catalog, the required sources are automatically created for you. To add new storage or edit the existing entries, click on the "SOURCES" tab in the Project screen.
+<img alt="" src="../../img/project/storage-1.png" /></p>
+<p>Configuration:</p>
+<ul>
+<li>Name: Data source name. Valid names are 63 characters or less and must begin and end with an lower case alphanumeric character ([a-z0-9]) with dashes (-) and lower case alphanumeric characters in between. </li>
+<li>Sub Path: Optional field. Path to mount the directory inside attached file system.</li>
+<li>Mount Path: Path inside the Project. This is a required field.</li>
+<li>Type: Choose one of the data source types. This is a required field.</li>
+</ul>
+<p><img alt="" src="../../img/project/storage-2.png" /></p>
+<h2 id="git-data-source">Git data source<a class="headerlink" href="#git-data-source" title="Permanent link">#</a></h2>
+<p>To connect a git data source you need to specify the following fields:</p>
+<ul>
+<li>Repository: Git repository path, like https://github.com/Kibernetika-catalog/tensorflow. You can use the "Expand" button to specify repository details if you have connected a git account in the <a href="../../settings/user/#repositories">user settings</a>.</li>
+<li>Sub Path - by default content of git repository will be visible in the Project under "MountPath/RepoName". By specifying Sub Path you can change this behavior. For example if your repository has "src" folder and you want to mount its content to  "MountPath/" you should set "Sub Path" to "RepositoryName/src".</li>
+<li>Account - Account must be set for private repository if you want to be able to commit changes. You need to provide secret that hold user private data, like access key or deploy key. See <a href="../../settings/user/#service-accounts">service account management</a></li>
+</ul>
+<p>Note that the "Account" field is required only if you have a private Github repository. Unless you have such a repository configured in the user settings, this field will remain unavailable (set to "without account").</p>
+<p><img alt="" src="../../img/project/git-source-config.png" /></p>
+<h2 id="nfs-data-source"><a name="nfs-data-source"></a>NFS data source<a class="headerlink" href="#nfs-data-source" title="Permanent link">#</a></h2>
+<p>This is an external network file system that support the NFS protocol. To connect a NFS source type you need to specify the following fields:</p>
+<ul>
+<li>Server: The IP address of your NFS server.</li>
+<li>Path: NFS internal path.</li>
+<li>Mount Path: The file path at which you want the data available.</li>
+<li>Sub Path: Path to data inside the NFS volume. For example if your want to mount the directory "/mypath/data" from the NFS server to  the directory "/MountPath/data", you should set the mount path to "/MountPath/data" and the sub path to "/mypath/data"</li>
+</ul>
+<p><img alt="" src="../../img/project/nfs-storage.png" /></p>
+<h2 id="cluster-storage">Cluster Storage<a class="headerlink" href="#cluster-storage" title="Permanent link">#</a></h2>
+<p>This is storage attached to a shared cluster or to a cluster from your infrastructure. If you do not have cluster storage configured, contact your administrator or support.
+To connect cluster storage you must specify one of the available cluster storages. See <strong><em>Cluster Storage</em></strong> and <a href="../../resources/kibernetika-storage/">Kibernetika Storage</a> for information about creating and managing this data source type.</p>
+<p><mark>ATTENTION</mark>: The following rules are applied to the 'Sub Path' field:</p>
+<ul>
+<li>If Sub Path begins with the '/' symbol then the data will be visible for all projects in your organization and you can share this data to other projects belonging to the same organization. </li>
+<li>If the Sub Path begins with '/shared/' then data  will be visible to everyone who has access to the same storage volume, even from another organization.</li>
+<li>Otherwise data will be visible only inside your project.</li>
+</ul>
+<p><img alt="" src="../../img/project/cluster-storage.png" /></p>
+<h2 id="s3-bucket-storage">S3 Bucket Storage<a class="headerlink" href="#s3-bucket-storage" title="Permanent link">#</a></h2>
+<p>This is storage that allows working with S3 bucket data. To connect a S3 source type you need to specify the following fields:</p>
+<ul>
+<li>Server: The address of your S3 server. Leave it empty for Amazon S3.</li>
+<li>Bucket: The bucket name.</li>
+<li>Account: Secret that holds the user's private credentials that will be used for the S3 connection. See <a href="../../settings/user/#Service Accounts">service account management</a></li>
+</ul>
+<p><img alt="" src="../../img/project/s3-storage.png" /></p>
+<h1 id="history">History<a class="headerlink" href="#history" title="Permanent link">#</a></h1>
+<p>This tab shows a list of all resource instances run, with some details about them.</p>
+<h1 id="jobs">Jobs<a class="headerlink" href="#jobs" title="Permanent link">#</a></h1>
+<p>Coming soon.</p>
+<h1 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">#</a></h1>
+<p>This tab shows various metrics of used resources in current project. Resources are grouped by user's tasks, project UIX components (Jupyter, Tensorboard, etc...) and servings.</p>
+<p><img alt="Metrics" src="../../img/project/metrics.png" /></p>
+<p>UIX components and servings metrics can be displayed for user selected time period (from last 5 minutes to 1 last day).
+Tasks metrics can be shown for whole task execution period (but not longer than 1 week) with the user specified interval (from 10 seconds to 1 hour).</p>
+<p>The following metrics are available:</p>
+<ul>
+<li><strong>CPU usage</strong> in percents</li>
+<li><strong>Memory usage</strong> in Megabytes</li>
+<li><strong>GPU usage</strong> in percents</li>
+<li><strong>GPU memory</strong> in Megabytes</li>
+<li><strong>GPU power draw</strong> in Watts</li>
+<li><strong>GPU temperature</strong> in Celsius</li>
+</ul>
+<h1 id="status">Status<a class="headerlink" href="#status" title="Permanent link">#</a></h1>
+<p>Status tab shows actual containers statuses:</p>
+<p><img alt="Status" src="../../img/project/status.png" /></p>
+<p>Also it's available to see events on problem nodes, in following example case we can see problems with repository mounting:</p>
+<p><img alt="Status events" src="../../img/project/status-events.png" /></p>
+<h1 id="simple-form">Simple form<a class="headerlink" href="#simple-form" title="Permanent link">#</a></h1>
+<p>Project owner can configure simple form in any project to automate dialog with user. Simple form is available in "Simply" tab. Form can be described in YAML. For example, let's take a look to this form:</p>
+<p><img alt="Simple form" src="../../img/project/simple-1.png" /></p>
+<p>User can fill all form fields and click "Build", and special task will be started with specified form values. </p>
+<p>This form is described by the following YAML:</p>
+<pre><code class="yaml">- name: model_name
+  label: Export to model
+  type: string
+  value: object-detection
+  width: 50
+- name: model_version
+  label: Model version
+  type: string
+  value: 1.0.0
+  width: 50
+- name: num_steps
+  label: Train steps quantity
+  type: int
+  value: 1000
+- label: Resize
+  type: group
+  elements:
+  - name: resize_min_dimension
+    label: Minimal resize dimension
+    type: int
+    value: 600
+    width: 50
+  - name: resize_max_dimension
+    label: Miximal resize dimension
+    type: int
+    value: 1024
+    width: 50
+  - name: resize_fixed_width
+    label: Fixed resize width
+    type: int
+    width: 50
+  - name: resize_fixed_height
+    label: Fixed resize height
+    type: int
+    width: 50
+- name: grid_scales
+  label: Grid generator scales
+  type: list
+  value:
+    - 0.25
+    - 0.5
+    - 1
+    - 2
+  width: 50
+  listType: float
+- name: grid_aspect_ratios
+  label: Grid generator aspect ratios
+  type: list
+  value:
+    - 0.5
+    - 1
+    - 2
+  width: 50
+  listType: float
+</code></pre>
+
+<p>Each form's field is described with the following parameters:</p>
+<ul>
+<li><code>name</code> - parameter's name, required for all fields (but not for groups)</li>
+<li><code>label</code> - parameter's label, uses <code>name</code> if not set</li>
+<li><code>type</code> - parameter's type, required for all fields and for group, available values see below</li>
+<li><code>value</code> - default value</li>
+<li><code>width</code> - field's width in percents (default 100)</li>
+<li><code>listType</code> - field's type, required for <code>type: list</code>, available values as for <code>type</code> excepts <code>list</code> and <code>group</code></li>
+<li><code>elements</code> - fields in group, required for <code>type: group</code></li>
+</ul>
+<p>Available field types:</p>
+<ul>
+<li><code>int</code>, <code>int8</code>, <code>int16</code>, <code>int32</code>, <code>int64</code> - integer value</li>
+<li><code>uint8</code>, <code>uint16</code> - unsigned integer values</li>
+<li><code>float</code>, <code>double</code> - floating point values</li>
+<li><code>byte</code>, <code>bytes</code> - upload file field</li>
+<li><code>string</code>, <code>strings</code> - string value (text field)</li>
+<li><code>list</code> - multiple values</li>
+<li><code>group</code> - group of fields</li>
+</ul>
+<p>Simple form execution template can be edited in "Edit template" context menu:</p>
+<p><img alt="Simple form" src="../../img/project/simple-2.png" /></p>
+<p>Execution template describes YAML with task's name and resources, for example:</p>
+<pre><code class="yaml">name: example
+resources:
+- workDir: $SRC_DIR
+  command: python example.py --parameter_name {{ .parameter_value }}
+  default_volume_mapping: true
+  images:
+    cpu: kuberlab/tensorflow:cpu-36-1.7.0-full
+    gpu: kuberlab/tensorflow:gpu-36-1.7.0-full
+  name: worker
+  replicas: 1
+  resources:
+    limits:
+      cpu: &quot;1&quot;
+      memory: 8Gi
+    requests:
+      cpu: 100m
+      memory: 64Mi
+  restartPolicy: Never
+</code></pre>
+
+<h1 id="integrate-project-to-your-workflow-engine">Integrate Project to your workflow engine<a class="headerlink" href="#integrate-project-to-your-workflow-engine" title="Permanent link">#</a></h1>
+<p>Coming soon.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../create-new-project/" title="Create New Project" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Create New Project
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../datasets/datasets/" title="Datasets Management" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Datasets Management
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright 2018 Kibernetika Inc.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b806dc00.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
