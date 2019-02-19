@@ -575,8 +575,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" title="Examples:" class="md-nav__link">
-    Examples:
+  <a href="#more-examples" title="More Examples:" class="md-nav__link">
+    More Examples:
   </a>
   
 </li>
@@ -985,8 +985,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" title="Examples:" class="md-nav__link">
-    Examples:
+  <a href="#more-examples" title="More Examples:" class="md-nav__link">
+    More Examples:
   </a>
   
 </li>
@@ -1018,8 +1018,8 @@
                   <h1>kdataset</h1>
                 
                 <h2 id="kdataset">kdataset<a class="headerlink" href="#kdataset" title="Permanent link">#</a></h2>
-<p>Utility script for data set management.</p>
-<p>Usage: kdataset [command]</p>
+<p>Utility script for dataset management.</p>
+<p>Usage: <code>kdataset &lt;command&gt;</code></p>
 <p>Available Commands:</p>
 <ul>
 <li><strong>bash-completion</strong>: Generates bash completion scripts</li>
@@ -1047,35 +1047,60 @@
 </ul>
 <h2 id="kdataset-commands">kdataset commands<a class="headerlink" href="#kdataset-commands" title="Permanent link">#</a></h2>
 <h5 id="delete">delete<a class="headerlink" href="#delete" title="Permanent link">#</a></h5>
-<p>Usage: <strong><em>kdataset delete</em></strong> <em>workspace entity-name [flags]</em></p>
+<p>Usage: <code>kdataset delete &lt;workspace&gt; &lt;entity-name&gt;</code></p>
+<p>Example:</p>
+<pre><code class="bash">kdataset delete my-workspace dataset-to-delete
+</code></pre>
+
 <h5 id="list">list<a class="headerlink" href="#list" title="Permanent link">#</a></h5>
-<p>Usage: <strong><em>kdataset list</em></strong> <em>workspace [flags]</em></p>
+<p>Usage: <code>kdataset list &lt;workspace&gt;</code></p>
+<p>Example(listing models):</p>
+<pre><code class="bash">kdataset list my-workspace --type model
+</code></pre>
+
 <h5 id="pull">pull<a class="headerlink" href="#pull" title="Permanent link">#</a></h5>
-<p>Usage: <strong><em>kdataset pull</em></strong> <em>workspace entity-name:version [-O output-file.tar] [flags]</em></p>
+<p>Usage: <code>kdataset pull &lt;workspace&gt; &lt;entity-name&gt;:&lt;version&gt; [-O output-file.tar]</code></p>
 <p>Flags:</p>
 <ul>
-<li>-O, --output string: Output filename.</li>
+<li><strong>-O</strong>, <strong>--output string</strong>: Output filename.</li>
 </ul>
+<p>Example:</p>
+<pre><code class="bash">kdataset pull my-workspace big-dataset:1.0.1
+</code></pre>
+
+<p><strong>Note</strong>: The command above will create a file named <code>my-workspace-big-dataset.1.0.1.tar</code></p>
 <h5 id="push">push<a class="headerlink" href="#push" title="Permanent link">#</a></h5>
-<p>Usage: <strong><em>kdataset push</em></strong> <em>workspace entity-name:version [flags]</em></p>
+<p>Usage: <code>kdataset push &lt;workspace&gt; &lt;entity-name&gt;:&lt;version&gt; [flags]</code></p>
 <p>Flags:</p>
 <ul>
-<li>--chunk-size int:      Chunk-size for scanning (default 512000).</li>
-<li>-c, --concurrency int: Number of concurrent request to server (default 8).</li>
-<li>--create:              Create entity in catalog if not exists.</li>
-<li>--comment string:      Comment for the new version</li>
-<li>-f,  --force:          Force uploading regardless warnings.</li>
-<li>--publish              Newly created dataset will be public. Only used in conjunction with --create.</li>
+<li><strong>--chunk-size</strong> int:           Chunk-size for scanning (default 1024000 ~ 1MB).</li>
+<li><strong>-c</strong>, <strong>--concurrency</strong> int:  Number of concurrent request to server (defaults to CPU cores num).</li>
+<li><strong>--create</strong>:                   Create entity in catalog if not exists.</li>
+<li><strong>--comment</strong> string:           Comment for the new version</li>
+<li><strong>-f</strong>,  <strong>--force</strong>:           Force uploading regardless warnings.</li>
+<li><strong>--publish</strong>                   Newly created dataset will be public. Only used in conjunction with --create.</li>
 </ul>
+<p>Example (creating and publishing some dataset):</p>
+<pre><code class="bash">kdataset push my-workspace big-dataset:1.0.1 --create --publish
+</code></pre>
+
 <h5 id="version-delete">version-delete<a class="headerlink" href="#version-delete" title="Permanent link">#</a></h5>
-<p>Usage: <strong><em>kdataset version-delete</em></strong> <em>workspace entity-name:version [flags]</em></p>
+<p>Usage: <code>kdataset version-delete &lt;workspace&gt; &lt;entity-name&gt;:&lt;version&gt;</code></p>
+<p>Example (deleting model version):</p>
+<pre><code class="bash">kdataset --type model version-delete my-workspace tf-model:1.0.1
+</code></pre>
+
 <h5 id="version-list">version-list<a class="headerlink" href="#version-list" title="Permanent link">#</a></h5>
-<p>Usage: <strong><em>kdataset version-list</em></strong> <em>workspace entity-name [flags]</em></p>
-<h2 id="examples">Examples:<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
-<p>kdataset push test-projects cifar-10:1.0.0</p>
-<p>kdataset push test-projects cifar-10:1.0.0 --create</p>
-<p>kdataset version-list test-projects cifar-10</p>
-<p>kdataset pull test-projects cifar-10:1.0.0</p>
+<p>Usage: <code>kdataset version-list &lt;workspace&gt; &lt;entity-name&gt;</code></p>
+<p>Example:</p>
+<pre><code class="bash">kdataset version-list my-workspace big-dataset
+</code></pre>
+
+<h2 id="more-examples">More Examples:<a class="headerlink" href="#more-examples" title="Permanent link">#</a></h2>
+<p><code>kdataset push test-projects cifar-10:1.0.0</code></p>
+<p><code>kdataset push test-projects cifar-10:1.0.0 --create</code></p>
+<p><code>kdataset version-list test-projects cifar-10</code></p>
+<p><code>kdataset pull test-projects cifar-10:1.0.0</code></p>
 <h2 id="installation">Installation:<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
 <p>Download the version for your OS from the <strong>kdataset</strong> <a href="https://github.com/kuberlab/pluk/releases">release page</a></p>
 <p>Uncompress the downloaded tarball.</p>
@@ -1087,15 +1112,15 @@
 application, you need a <strong>Kibernetika</strong> config file at <strong>~/.kuberlab/config</strong>.
 If you do not have one, you need to create one.</p>
 <p>The configuration values that need to be created are (basically, it is a simple file in YAML format):</p>
-<pre><code class="yaml">base_url: https://cloud.kibernetika.io/api/v0.2 # url to access **Kibernetika** API.
-token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx # your token, which can be obtained from the `settings` page of the KuberLab application.
+<pre><code class="yaml">base_url: https://cloud.kibernetika.io/api/v0.2 # url to access Kibernetika API.
+token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx # your token, which can be obtained from the settings page of the Kibernetika application.
 </code></pre>
 
 <p>Please refer to <a href="https://github.com/kuberlab/pluk/blob/master/README.md#cli-reference">kdataset README.md</a> for more detailed configuration.</p>
 <p>To verify the installation, at first use
 <code>kdataset --version</code>, to verify that you are executing the right version of utility</p>
 <p>Then execute
-<code>kdataset dataset-list kuberlab-demo</code></p>
+<code>kdataset list kuberlab-demo</code></p>
 <p>And you should see the list of all the demo data sets.</p>
                 
                   
