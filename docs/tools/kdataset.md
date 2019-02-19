@@ -1,7 +1,7 @@
 ## kdataset
-Utility script for data set management.
+Utility script for dataset management.
 
-Usage: kdataset \[command]
+Usage: `kdataset <command>`
 
 Available Commands:
 
@@ -32,50 +32,82 @@ Flags:
 
 ##### delete
 
-Usage: ***kdataset delete*** *workspace entity-name \[flags]*
+Usage: `kdataset delete <workspace> <entity-name>`
+
+Example:
+```bash
+kdataset delete my-workspace dataset-to-delete
+```
 
 ##### list
 
-Usage: ***kdataset list*** *workspace \[flags]*
+Usage: `kdataset list <workspace>`
+
+Example(listing models):
+```bash
+kdataset list my-workspace --type model
+```
 
 ##### pull
 
-Usage: ***kdataset pull*** *workspace entity-name:version \[-O output-file.tar] \[flags]*
+Usage: `kdataset pull <workspace> <entity-name>:<version> [-O output-file.tar]`
 
 Flags:
 
- * -O, --output string:	Output filename.
+ * **-O**, **--output string**:	Output filename.
+
+Example:
+```bash
+kdataset pull my-workspace big-dataset:1.0.1
+```
+**Note**: The command above will create a file named `my-workspace-big-dataset.1.0.1.tar`
 
 ##### push
 
-Usage: ***kdataset push*** *workspace entity-name:version \[flags]*
+Usage: `kdataset push <workspace> <entity-name>:<version> [flags]`
 
 Flags:
 
- * --chunk-size int:      Chunk-size for scanning (default 512000).
- * -c, --concurrency int: Number of concurrent request to server (default 8).
- * --create:		      Create entity in catalog if not exists.
- * --comment string:      Comment for the new version
- * -f,  --force:	      Force uploading regardless warnings.
- * --publish              Newly created dataset will be public. Only used in conjunction with --create.
+ * **--chunk-size** int:           Chunk-size for scanning (default 1024000 ~ 1MB).
+ * **-c**, **--concurrency** int:  Number of concurrent request to server (defaults to CPU cores num).
+ * **--create**:		           Create entity in catalog if not exists.
+ * **--comment** string:           Comment for the new version
+ * **-f**,  **--force**:	       Force uploading regardless warnings.
+ * **--publish**                   Newly created dataset will be public. Only used in conjunction with --create.
+
+Example (creating and publishing some dataset):
+
+```bash
+kdataset push my-workspace big-dataset:1.0.1 --create --publish
+```
 
 ##### version-delete
 
-Usage: ***kdataset version-delete*** *workspace entity-name:version \[flags]*
+Usage: `kdataset version-delete <workspace> <entity-name>:<version>`
+
+Example (deleting model version):
+```bash
+kdataset --type model version-delete my-workspace tf-model:1.0.1
+```
 
 ##### version-list
 
-Usage: ***kdataset version-list*** *workspace entity-name \[flags]*
+Usage: `kdataset version-list <workspace> <entity-name>`
 
-## Examples:
+Example:
+```bash
+kdataset version-list my-workspace big-dataset
+```
 
-kdataset push test-projects cifar-10:1.0.0
+## More Examples:
 
-kdataset push test-projects cifar-10:1.0.0 --create
+`kdataset push test-projects cifar-10:1.0.0`
 
-kdataset version-list test-projects cifar-10
+`kdataset push test-projects cifar-10:1.0.0 --create`
 
-kdataset pull test-projects cifar-10:1.0.0
+`kdataset version-list test-projects cifar-10`
+
+`kdataset pull test-projects cifar-10:1.0.0`
 
 ## Installation:
 
@@ -96,8 +128,8 @@ If you do not have one, you need to create one.
 The configuration values that need to be created are (basically, it is a simple file in YAML format):
 
 ```yaml
-base_url: https://cloud.kibernetika.io/api/v0.2 # url to access **Kibernetika** API.
-token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx # your token, which can be obtained from the `settings` page of the KuberLab application.
+base_url: https://cloud.kibernetika.io/api/v0.2 # url to access Kibernetika API.
+token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx # your token, which can be obtained from the settings page of the Kibernetika application.
 ```
 
 Please refer to [kdataset README.md](https://github.com/kuberlab/pluk/blob/master/README.md#cli-reference) for more detailed configuration.
@@ -106,7 +138,7 @@ To verify the installation, at first use
 `kdataset --version`, to verify that you are executing the right version of utility
 
 Then execute
-`kdataset dataset-list kuberlab-demo`
+`kdataset list kuberlab-demo`
 
 And you should see the list of all the demo data sets.
 
