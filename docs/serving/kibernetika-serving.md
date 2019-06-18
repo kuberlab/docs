@@ -332,7 +332,7 @@ def postprocess1(outputs, ctx):
     # if length of face boxes is 0 -> skip_next is True else False
     ctx.skip_next = len(outputs.get('face-boxes', [])) == 0
 
-    returnt outputs
+    return outputs
 
 def preprocess2(inputs, ctx):
     if ctx.skip_next:
