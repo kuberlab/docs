@@ -17,7 +17,7 @@ Face recognition includes calculating face embeddings using Inception ResNet mod
 Start by creating a new dataset. In Kibernetika platform, we can do this using Web UI, CLI client or provided API. We will use Web UI.
 
 * Open our demo dataset https://cloud.kuberlab.io/openvino-demo/catalog/dataset/open-faces/versions/1.0.0
-* And **FORK** this dataset to one of your workspace
+* And **FORK** this dataset to one of your workspaces
 
 ![](../img/tutorials/openvino-face/dataset1.gif)
 
