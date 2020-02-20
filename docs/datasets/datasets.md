@@ -14,13 +14,17 @@ To use the Dataset object in the **Kibernetika** project, a user needs to add **
 
 ### Create dataset
 
-Dataset can be created from UI interface directly or using [kdataset CLI](../tools/kdataset.md). For creating new dataset from UI  go to catalog in any organization, choose "Dataset" section in the left menu and click "(+) Add" button. Fill required field Name, Idenfification will be filled automatically if empty. Optional Description and Keywords also can be filled. "Published" checkbox should be checked if user wants his dataset will be available for all users.
+Dataset can be created from UI interface directly or using [kdataset CLI](../tools/kdataset.md). For creating new dataset from UI  go to catalog in any organization, choose "Dataset" section in the left menu and click "(+) Add" button. 
 
-![](../img/datasets-work-with/img1.png)
+![](../img/datasets-work-with/dataset_add-v2.png)
+
+Fill required field Name, Idenfification will be filled automatically if empty. Optional Description and Keywords also can be filled. "Published" checkbox should be checked if user wants his dataset will be available for all users.
+
+![](../img/datasets-work-with/dataset_create-v2.png)
 
 New dataset will be created after clicking "Save".
 
-![](../img/datasets-work-with/img2.png)
+![](../img/datasets-work-with/dataset_new-v2.png)
 
 Dataset as all other catalog objects can be marked with star and commented by all users who have access to this dataset.
 Dataset's owner can edit readme (Readme tab) and manage dataset versions (Versions tab).
@@ -30,7 +34,7 @@ Dataset's owner can edit readme (Readme tab) and manage dataset versions (Versio
 
 Dataset metadata info can be updated only in UI.
 
-![](../img/datasets-work-with/img3.png)
+![](../img/datasets-work-with/dataset_menu-v2.png)
 
 "Edit" option is available in dataset's context menu. User can change dataset's Name, Desctiption and Keywords. Identification can not be changed.
 
@@ -113,15 +117,15 @@ To use the Dataset object in the **Kibernetika** project, a user needs to add **
 
 To configure this, select the storage type ‘dataset’, and choose the required dataset and version from the list displayed (see figure below).
 
-![](../img/datasets/img1.png)
+![](../img/datasets/dataset_sources-v2.png)
 
 Now you can see the data set as a folder in Jupyter Notebook. In workflow tasks it will be accessible by the use of environment variables.
 
-![](../img/datasets/img2.png)
+![](../img/datasets/dataset_sources_add-v2.png)
 
 Both the Jupyter Notebook, and the Python and R environments can access the data files stored in the data set directories chosen.
 
-![](../img/datasets/img3.png)
+![](../img/datasets/dataset_sources_new-v2.png)
 
 Because data sets can be very big, the loading of the data needs to be done from the command line and not the browser interface. **Kibernetika** has provided the ***kdataset*** utility to facilitate operations with data sets.
 
