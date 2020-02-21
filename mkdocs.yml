@@ -1,6 +1,6 @@
 site_name: Kibernetika Documentation 
 theme: readthedocs
-copyright: Copyright 2018 Kibernetika Inc.
+copyright: Copyright 2020 Kibernetika Inc.
 dev_addr: 0.0.0.0:8000
 markdown_extensions:
 - toc:
