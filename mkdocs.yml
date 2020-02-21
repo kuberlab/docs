@@ -19,6 +19,8 @@ pages:
   - 'Datasets Management': 'datasets/datasets.md'
 - 'Models':
   - 'Models Management': 'models/models.md'
+- 'Versioning'
+  - 'Versioning Workflows': 'versioning/versioning.md'
 - 'Serving':
   - 'Start serving': 'serving/serving-start.md'
   - 'Serving tool': 'serving/kibernetika-serving.md'
