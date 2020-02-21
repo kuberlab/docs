@@ -37,6 +37,7 @@ pages:
 - 'HowTo':
   - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'
   - 'Train model for object-detecion using object-detection API': 'how-to/object-detection-pets.md'
+  - 'Run fast.ai course': 'how-to/fastai.md'
 - 'About':
   - 'Copyright': 'about/about.md'
 - 'Misc':
