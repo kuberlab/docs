@@ -20,7 +20,6 @@ pages:
 - 'Models':
   - 'Models Management': 'models/models.md'
 - 'Versioning':
-  - 'Versioning Workflow': 'versioning/versioning.md'
   - 'Versioning Workflow': 'models/versioning.md'
 - 'Serving':
   - 'Start serving': 'serving/serving-start.md'
