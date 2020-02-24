@@ -2,7 +2,7 @@
 
 ## Kibernetika Basics
 
-This tutorial provides a step-by-step guide to the initial setup of the  **Kibernetika.AI Machine Learning Platform**, which will help you run a sample application using a template from the catalogue. 
+This tutorial provides a step-by-step guide to the initial setup of the  **Kibernetika.AI Machine Learning** environment, which will help you run a sample application using a template from the catalogue. 
 
 ## Kibernetika Registration
 

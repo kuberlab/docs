@@ -1,4 +1,4 @@
-Project is the environment for development and lifecycle management of ML/AI application. You can find a lot of templates and pre-built Projects in the **Kibernetika** catalog.
+Project is the environment for development and lifecycle management of ML/AI application. You can find a lot of templates and pre-built Projects in the **Kibernetika.AI** catalog.
 
 You can create new project [using UI interface](#creating-empty-project-from-ui-interface) or [using command line tool](#creating-empty-project-using-kibernetika-command-line-tool).
 

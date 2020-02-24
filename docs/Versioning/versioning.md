@@ -1,5 +1,6 @@
 
-***Kibernetika.AI Versioning and Lifecycle Management***
+## Kibernetika.AI Versioning and Lifecycle Management
+
 It's a well-known fact that Machine Learning (ML) requires a lot of trial and error. Experimentation is key. The procedures that people use to prepare training data and tune training parameters are very iterative. In order to facilitate this kind of software development, you have to track the code, configurations, and data used for ML experiments so you can always answer the question of how a model was trained.
 
 In Kibernetika.AI datasets and trained models are placed in the catalog from which they can be accessed for use in the model development pipeline or for serving and deployment.
