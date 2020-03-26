@@ -1,4 +1,4 @@
-##### Image Background Removal
+**Image Background Removal**
 
 This is the tutorial showing the implementation of background removal functionality. It is used as in a photo editing and in video prodduction as a replacement for a greenn screen. It also can be used in virtual background for video calls.
 
@@ -14,7 +14,7 @@ The tutorial is using Tensorflow  v1.14 and will show end-to-end steps from the 
 - Go through Install screen 3 and 4 without any changes
 - Congratulations, you created the new project 
 
-###### Connect GitHub repository with tutorial source code to the project
+**Connect GitHub repository with tutorial source code to the project**
 
 In the SOURCES tab
 * Edit **src** volume
@@ -24,7 +24,7 @@ In the SOURCES tab
 
 #### Prepare Dataset  
 
-###### Download COCO dataset
+**Download COCO dataset**
 
 In the JUPYTER tab
 * Open Jupyter configuration to configure Jupyter for data processing task
@@ -47,7 +47,7 @@ unzip train2017.zip; rm train2017.zip
 ```
 - Close terminal
 
-###### Notebook for DataSet processing
+**Notebook for DataSet processing**
 
 In the JUPYTER tab
 
@@ -58,7 +58,7 @@ DataSet notebook contains code to convert COCO dataset to suitable for training 
 You will see several images for verification. The first version of people-mask dataset is pushed into the catalog to create the placeholder for the final dataset which will be created later by the pipeline task.
   * To see the newly created dataset open Catalog and in the search field type people-mask. From the search results select people-mask dataset. You will see Version 1.0.0 which was just created
 
-###### Make dataset people-mask available to the project background-v1
+**Make dataset people-mask available to the project background-v1**
 
 * Open  SOURCES tab
 * Edit “data” volume
@@ -68,7 +68,7 @@ You will see several images for verification. The first version of people-mask d
 
 #### Pipeline Workflow 
 
-##### Create pipeline tasks
+**Create pipeline tasks**
 In the TASKS tab
 
 * Create **data** task
@@ -89,7 +89,7 @@ In the TASKS tab
   * Change the type to “export” !!!, press OK
   * Press SAVE, to save the latest step of the project
 
-###### Confiogure and execute pipeline workflow
+**Confiogure and execute pipeline workflow**
 
   * Configure and execute **data** task
     * In the field Task resources: Resource worker: Execution command - put the command line.
