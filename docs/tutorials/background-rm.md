@@ -39,11 +39,11 @@ In the STATUS tab you will be able to see the status of the project components.*
 + From the JUPYTER tab and open new Terminal window and execute following shell commands
 
 ``` 
-> mkdir coco; cd coco
-> wget  http://images.cocodataset.org/annotations/annotations_trainval2017.zip
-> wget http://images.cocodataset.org/zips/train2017.zip
-> unzip annotations_trainval2017.zip; rm annotations_trainval2017.zip
-> unzip train2017.zip; rm train2017.zip
+mkdir coco; cd coco
+wget  http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+wget http://images.cocodataset.org/zips/train2017.zip
+unzip annotations_trainval2017.zip; rm annotations_trainval2017.zip
+unzip train2017.zip; rm train2017.zip
 ```
 - Close terminal
 
@@ -94,9 +94,7 @@ In the TASKS tab
   * Configure and execute **data** task
     * In the field Task resources: Resource worker: Execution command - put the command line.
 
-    ``` 
-    LIMIT_PIC=-1 jupyter nbconvert ./models/fastbg/DataSet.ipynb --execute --to html --stdout --ExecutePreprocessor.timeout=-1 | python ./submit_result.py
-    ```
+    `LIMIT_PIC=-1 jupyter nbconvert ./models/fastbg/DataSet.ipynb --execute --to html --stdout --ExecutePreprocessor.timeout=-1 | python ./submit_result.py`
 
     LIMIT_PIC=-1 - all pictures from the dataset will be processed (maximum)
     LIMIT_PIC=15 will limit the number of pictures to 15
@@ -114,9 +112,7 @@ In the TASKS tab
     * Update data volume by selecting version 1.0.1 of the dataset
     * Type Execution command.
 
-    ``` 
-    python train_bg.py --worker --batch-size 8 --data_set $DATA_DIR --loss image --optimizer AdamOptimizer --num-chans 64 --lr-step-size 40 --drop-prob 0.1 --resolution 160 --num-epochs 10 --log_step_count_steps 50 --save_summary_steps 50
-    ```
+    `python train_bg.py --worker --batch-size 8 --data_set $DATA_DIR --loss image --optimizer AdamOptimizer --num-chans 64 --lr-step-size 40 --drop-prob 0.1 --resolution 160 --num-epochs 10 --log_step_count_steps 50 --save_summary_steps 50`
 
     * In the Resources section put GPU=1
     * Press “SAVE AND EXECUTE”
@@ -126,9 +122,9 @@ In the TASKS tab
     * Go back to TASKS tab and select export
     * Change Execution command to:
 
-    ```
-    python train_bg.py --export --data_set None
-    ```
+    
+    `python train_bg.py --export --data_set None`
+    
 
     * Press SAVE
 
