@@ -1,10 +1,10 @@
-## Image Background Removal
+##### Image Background Removal
 
 This is the tutorial showing the implementation of background removal functionality. It is used as in a photo editing and in video prodduction as a replacement for a greenn screen. It also can be used in virtual background for video calls.
 
 The tutorial is using Tensorflow  v1.14 and will show end-to-end steps from the creation of the prokject to deploying background removal functionality in the cloud.
 
-#### Step 1: Create Project. 
+#### Create Project. 
 
 - Go to the Projects page and create a new project,
 - In the template selection page choose Tensorflow 
@@ -22,7 +22,7 @@ In the SOURCES tab
 * Set **Sub Path** to demo-zoo 
 * SAVE
 
-#### Step 2: Prepare Dataset  
+#### Prepare Dataset  
 
 ###### Download COCO dataset
 
@@ -66,7 +66,7 @@ You will see several images for verification. The first version of people-mask d
 * Change dataset to people-mask version 1.0.0
 * SAVE
 
-#### Step 3: Create Pipeline Workflow 
+#### Pipeline Workflow 
 
 ##### Create pipeline tasks
 In the TASKS tab
@@ -143,7 +143,7 @@ In the TASKS tab
     * Select the cluster you want your model to run on.
     * Press SERVE at the bottom of the form
 
-#### Step 4: Explore the results
+#### Explore the Results
 
 When Serving task is up running you can test the model by loading images and processing them
 
