@@ -90,8 +90,9 @@ In the TASKS tab
   * Press SAVE, to save the latest step of the project
 
 ###### Confiogure and execute pipeline workflow
+
   * Configure and execute **data** task
-    * In the field Task resources: Resource worker: Execution command - put the command line
+    * In the field Task resources: Resource worker: Execution command - put the command line.
 
     ``` 
     LIMIT_PIC=-1 jupyter nbconvert ./models/fastbg/DataSet.ipynb --execute --to html --stdout --ExecutePreprocessor.timeout=-1 | python ./submit_result.py
@@ -108,22 +109,27 @@ In the TASKS tab
     people-mask dataset in the catalog will display version 1.0.1
 
  - Configure and execute **train** task
+
     * Go back to the TASKS tab and select task train
     * Update data volume by selecting version 1.0.1 of the dataset
-    * Type Execution command
+    * Type Execution command.
+
     ``` 
     python train_bg.py --worker --batch-size 8 --data_set $DATA_DIR --loss image --optimizer AdamOptimizer --num-chans 64 --lr-step-size 40 --drop-prob 0.1 --resolution 160 --num-epochs 10 --log_step_count_steps 50 --save_summary_steps 50
     ```
+
     * In the Resources section put GPU=1
     * Press “SAVE AND EXECUTE”
     **It may take up to five minutes to bring up GPU instance for processing. You can check on the progress by the opening STATUS tab.**
 
  * Configure task “export”
     * Go back to TASKS tab and select export
-    * Change Execution command to 
+    * Change Execution command to:
+
     ```
     python train_bg.py --export --data_set None
     ```
+
     * Press SAVE
 
  - Export the trained model 
