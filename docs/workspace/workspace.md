@@ -1,6 +1,6 @@
-### Workspace Screen
+### Workspace Home
 
-![](../img/user-interface/workspace.png)
+![](../img/user-interface/kibernetika_ai_workspace_leonard.png)
 
 1. User Name
 2. Settings - link to the account and organisation settings page
