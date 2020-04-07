@@ -1,3 +1,15 @@
+# **Spring Promotion**
+
+During the months of April and May Kibernetika.AI service will be available for **FREE**.
+
+The promotion include individual account, unlimited use of the CPU resource and 100 hours of GPU resource. 
+Account also inlude 10G of free storage and goup capabilities for collaboration.
+
+Support is available at support@kibernetika.ai or on slack channel.
+
+Training session over video conference is available upon request.
+
+
 # Quick Start Guide
 
 ## Kibernetika Basics
