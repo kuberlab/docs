@@ -5,7 +5,7 @@ During the months of April and May Kibernetika.AI service will be available for 
 - Individual trial account. 
 - Collaboration with other users
 
-* Unlimited use of the CPU resource 
+* Unlimited use of CPU resource 
 * 100 hours of GPU resource. 
 * 10G cloud storage
 
