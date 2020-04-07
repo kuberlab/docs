@@ -14,11 +14,9 @@
 11. Kibernetika Demo Gallery 
 12. Help - Kibernetika.AI online documentation
 13. List of running tasks - dashboard showing the list of active tasks for the current workspace.
-14. Recent Projects
-15. Recent Servings
-16. Resource usage 
-
-
+14. Recent Projects - open the list of the latest run projects
+15. Recent Servings - open the list of the most recent servings
+16. Resource usage - shows the availability and usage of GPU resource. In the cloud environment GPU is available on demand.
 
 
 #### Workspace Projects

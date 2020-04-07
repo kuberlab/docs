@@ -8,8 +8,7 @@ markdown_extensions:
 google_analytics: ['UA-36723568-3', 'mkdocs.org']
 pages:
 - 'Home': 'index.md'
-- 'Workspace':
-  - 'Workspace Home': 'workspace/workspace.md'
+- 'Workspace': 'workspace/workspace.md'
 - 'Settings':
   - 'User': 'settings/user.md'
   - 'Organization': 'settings/organization.md'
