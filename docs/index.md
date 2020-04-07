@@ -2,14 +2,22 @@
 
 During the months of April and May Kibernetika.AI service will be available for **FREE**.
 
-The promotion include individual account, unlimited use of the CPU resource and 100 hours of GPU resource. 
-Account also inlude 10G of free storage and goup capabilities for collaboration.
+- Individual trial account. 
+- Collaboration with other users
 
-Support is available at support@kibernetika.ai or on slack channel.
+* Unlimited use of the CPU resource 
+* 100 hours of GPU resource. 
+* 10G cloud storage
+
+- TensorFlow Tutorials
+- PyTorch Tutorials
+- Code for fast.ai machine learning course
+
+Support is available at **support@kibernetika.ai** or on slack channel.
 
 Training session over video conference is available upon request.
 
-
+----
 # Quick Start Guide
 
 ## Kibernetika Basics
@@ -24,7 +32,7 @@ You must have an account to use **Kibernetika.AI**. Once your account is created
 
 2. Sign up with your email address and other required information 
 
-![](img/quickstart/login-v2.png)
+![Kibernetika.AI login screen](img/quickstart/login-v2.png)
 
 3. A confirmation email will be sent to you within 24 hours. Follow the instructions in this email to complete your registration. If you do not receive the e-mail message from the address "noreply@kibernetika.ai" within 24 hours of initial registration, please check the Spam folder. If you have not received the confirmation e-mail, please contact [support@kibernetika.ai](mailto:support@kibernetika.ai)
 
