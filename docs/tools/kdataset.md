@@ -134,6 +134,8 @@ token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx # your token, which can be obtained 
 
 Please refer to [kdataset README.md](https://github.com/kuberlab/pluk/blob/master/README.md#cli-reference) for more detailed configuration.
 
+Note for MacOS: Due to the security requirements, to execute kdataset it is necessary to open executable file first from the file manager using Ctl-click and selecting Open in the dialog. MacOS will remember your choice and the application will work from the command line.
+
 To verify the installation, at first use
 `kdataset --version`, to verify that you are executing the right version of utility
 
