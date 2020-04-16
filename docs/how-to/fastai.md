@@ -1,6 +1,6 @@
-# Fast.ai v3 Deep Learning Course on Kibernetika.ai
+# Fast.ai Practical Deep Learning for Coders, Part 1 on Kibernetika.ai
 
-This is a quick guide to starting v3 of the Fast.ai course. 
+This is a quick guide to starting the Fast.ai course. 
 
 ### Step 1:  Select Projects
 
