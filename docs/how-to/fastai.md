@@ -1,5 +1,3 @@
-# fast.ai deep learning course
-
 # Fast.ai v3 Deep Learning Course on Kibernetika.ai
 
 This is a quick guide to starting v3 of the Fast.ai course. 
