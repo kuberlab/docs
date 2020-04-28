@@ -1,3 +1,5 @@
 ## Someone Like Me 
-experimental
+experimental 
+
+Application is similar to Avatarify
 

@@ -1,4 +1,4 @@
-## Cartoon Style 
+## Cartoon Style Transfer 
 
 Turn your photo into anime. Use one of the anime styles.
 

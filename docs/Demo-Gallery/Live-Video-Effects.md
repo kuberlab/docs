@@ -1,7 +1,7 @@
 ## Live Video Effects
 
-To experience Live Video  you need to have a web cam and WebRTC capable browser like Chrome, Safari or Firefox.
+To experience Live Video  you need to have a Camera and WebRTC capable browser like Chrome, Safari or Firefox.
 
-You need to select one of the styles. That wou result in the generated image preview in selected style.
+You need to select one of the styles. That will generate image preview in selected style.
 
-The next step is to hit "LIVE VIDEO" and experience generated real-time video. Video can be made full screen for better experience.
+The next step is to hit "LIVE VIDEO" and after initialization you will see real-time video in the style selected by you. Video can be made full screen for better experience.
