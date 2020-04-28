@@ -3,3 +3,4 @@ docs.code-workspace
 docs/.DS_Store
 docs/img/.DS_Store
 .idea
+mkdocs.old

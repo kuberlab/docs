@@ -48,14 +48,6 @@ pages:
   - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'
   - 'Train model for object-detecion using object-detection API': 'how-to/object-detection-pets.md'
   - 'Run fast.ai course': 'how-to/fastai.md'
-- 'Demo Gallery'
-  - 'Artistic Style Transfer': 'demo-gallery/artistic-style.md'
-  - 'Cartoon Style': 'demo-gallery/cartoon-style.md'
-  - 'Live Video Effects': 'demo-gallery/live-video-effects.md'
-  - 'Object Detection and Classification': 'demo-gallery/object-detection.md'
-  - 'Someone Like Me': 'demo-gallery/someone-like-me.md'
-  - 'Text and Boxes': 'demo-gallery/text-boxes.md'
-  - 'Virtual Makeup': 'demo-gallery/virtual-makeup.md'
 - 'About':
   - 'Copyright': 'about/about.md'
       
