@@ -31,16 +31,6 @@ pages:
   - 'kdataset': 'tools/kdataset.md'
   - 'kibernetika-serving': 'serving/kibernetika-serving.md'
   - 'python-mlboardclient': 'tools/python-mlboardclient/index.md'
-- 'Tutorials':
-  - 'Project Page Tour': 'tutorials/project-page.md'
-  - 'Using OpenVINO': 'tutorials/openvino-1.md'
-  - 'Image Background Removal': 'tutorials/background-rm.md'
-- 'HowTo':
-  - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'
-  - 'Train model for object-detecion using object-detection API': 'how-to/object-detection-pets.md'
-  - 'Run fast.ai course': 'how-to/fastai.md'
-- 'About':
-  - 'Copyright': 'about/about.md'
 - 'Misc':
    - 'python-mlboardclent':
       - 'Index': 'tools/python-mlboardclient/index.md'
@@ -50,3 +40,22 @@ pages:
       - 'TensorFlow distribute configuration': 'tools/python-mlboardclient/tf-conf-gen.md'
       - 'Uploading a model': 'tools/python-mlboardclient/upload-model.md'
       - 'Working with tasks': 'tools/python-mlboardclient/work-with-tasks.md'
+- 'Tutorials':
+  - 'Project Page Tour': 'tutorials/project-page.md'
+  - 'Using OpenVINO': 'tutorials/openvino-1.md'
+  - 'Image Background Removal': 'tutorials/background-rm.md'
+- 'HowTo':
+  - 'Train CIFAR-10 Model from scratch using Kibernetika.AI': 'how-to/cifar-10.md'
+  - 'Train model for object-detecion using object-detection API': 'how-to/object-detection-pets.md'
+  - 'Run fast.ai course': 'how-to/fastai.md'
+- 'Demo Gellery'
+  - 'Artistic Style Transfer': 'Demo-Gallery/Artistic-Style_transfer.md'
+  - 'Cartoon Style': 'Demo-Gallery/Cartoon-Style.md'
+  - 'Live Video Effects': 'Demo-Gallery/Live-Video-Effects.md'
+  - 'Object Detection and Classification': 'Demo-Gallery/Object-Detection-Classification.md'
+  - 'Someone Like Me': 'Demo-Gallery/Someone-Like-Me.md'
+  - 'Text and Boxes': 'Demo-Gallery/Text-Boxes.md'
+  - 'Virtual Makeup': 'Demo-Gallery/Virtual-Makeup.md'
+- 'About':
+  - 'Copyright': 'about/about.md'
+      
