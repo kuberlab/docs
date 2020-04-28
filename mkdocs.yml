@@ -49,7 +49,7 @@ pages:
   - 'Train model for object-detecion using object-detection API': 'how-to/object-detection-pets.md'
   - 'Run fast.ai course': 'how-to/fastai.md'
 - 'Demo Gallery'
-  - 'Artistic Style Transfer': 'Demo-Gallery/artistic-style.md'
+  - 'Artistic Style Transfer': 'about/artistic-style.md'
 - 'About':
   - 'Copyright': 'about/about.md'
       
