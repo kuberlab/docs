@@ -51,11 +51,12 @@ pages:
 - 'Demo Gallery':
   - 'Artistic Style Transfer': 'Demo-Gallery/artistic-style.md'
   - 'Cartoon Style': 'Demo-Gallery/cartoon-style.md'
-  - 'Live Video Effects': 'Demo-Gallery/live-video-effects.md'
   - 'Object Detection and Classification': 'Demo-Gallery/object-detection.md'
-  - 'Someone Like Me': 'Demo-Gallery/someone-like-me.md'
   - 'Text and Boxes': 'Demo-Gallery/text-boxes.md'
   - 'Virtual Makeup': 'Demo-Gallery/virtual-makeup.md'
+  - 'Virtual Background': 'Demo-Gallery/virtual-background.md'
+  - 'Live Video Effects': 'Demo-Gallery/live-video-effects.md'
+  - 'Someone Like Me (experimental)': 'Demo-Gallery/someone-like-me.md'
 - 'About':
   - 'Copyright': 'about/about.md'
       
