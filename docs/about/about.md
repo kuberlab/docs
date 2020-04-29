@@ -1,1 +1,1 @@
-#### Copyright@2020 Kibernetika Inc.
+#### Copyright@2018-2020 Kibernetika Inc.
